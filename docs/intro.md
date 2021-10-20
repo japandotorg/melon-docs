@@ -28,6 +28,6 @@ Melon is a bot designed to keep your server safe and engage your members. It's m
   * Fun, powerful and engaging leveling system
 
 * ## <b> About the Developer </b>
-That's me! I'm `inthedark.org#0666 (759180080328081450)`, and I've been moderating Discord servers for over 3 years now and have been developing bots for over 3 months now, I've been programming for over 6 years, Coding was possible for me because of websites like [udemy](https://www.udemy.com) and [skillshare](https://https://www.skillshare.com) and some basic knowledge I got in my College. I own a couple of servers but be sure to join [this server](https://discord.gg/danklovers) as this is my main server and where i'm mostly active. I moderate/manage a few more servers too, so just hit me up if you wanna join them or something.
+That's me! I'm `inthedark.org#0666 (759180080328081450)`, and I've been moderating Discord servers for over 3 years now and have been developing bots for over 3 months now, I've been programming for over 6 years, Coding was possible for me because of websites like [udemy](https://www.udemy.com) and [skillshare](https://https://www.skillshare.com) and some basic knowledge I got in my College. I own a couple of servers but be sure to join [this server](https://discord.gg/danklovers) as this is my main server and where I'm mostly active. I moderate/manage a few more servers too, so just hit me up if you wanna join them or something.
 
 
