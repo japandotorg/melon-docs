@@ -5,6 +5,10 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
+import { FaDiscord } from "@react-icons/all-files/fa/FaDiscord";
+import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
+import { BiLinkAlt } from "@react-icons/all-files/bi/BiLinkAlt";
+import { Col } from "react-bootstrap";
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -35,6 +39,40 @@ export default function Home() {
       <main>
         <HomepageFeatures />
       </main>
+      <Col md={12} className="home-about-social">
+        <ul className="home-about-social-links">
+          <li className="social-icons">
+            <a
+              href="https://discord.gg/danklovers"
+              target="_blank"
+              rel="noreferrer"
+              className="icon-colour  home-social-icons"
+            >
+              <FaDiscord />
+            </a>
+          </li>
+          <li className="social-icons">
+            <a 
+              href="https://github.com/japandotorg"
+              target="blank"
+              rel="noreferrer"
+              className="icon-colour home-social-icons"
+            >
+              <FaGithub />
+            </a>
+          </li>
+          <li className="social-icons">
+            <a 
+              href="https://japandotorg.me"
+              target="blank"
+              rel="noreferrer"
+              className="icon-colour home-social-icons"
+            >
+              <BiLinkAlt />
+            </a>
+          </li>
+        </ul>
+      </Col>
     </Layout>
   );
 }

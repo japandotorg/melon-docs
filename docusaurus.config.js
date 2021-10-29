@@ -54,7 +54,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           },
           {
             href: 'https://github.com/japandotorg',
-            label: 'GitHub',
+            className: 'header-github-link',
             position: 'right',
           },
         ],
