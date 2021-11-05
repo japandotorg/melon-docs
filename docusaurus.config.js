@@ -40,8 +40,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       algolia: {
-        apiKey: '',
-        indexName: '',
+        apiKey: '3b9ec763a3a4eb974186b961e97cb7de',
+        indexName: 'dev_japandotorg_melon_docs',
         contextualSearch: true,
         placeholder: 'Search',
         appId: 'T3WTO54PPE',
