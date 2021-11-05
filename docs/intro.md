@@ -5,8 +5,6 @@ sidebar_position: 1
 
 # <u> MELON - MULTIPURPOSE DISCORD BOT </u>
 
-![LEMON](https://cdn.discordapp.com/avatars/808706062013825036/0cf6cbcc588ea4a5d5c1bb492cd2b96f.png)
-
 * ## <b> Purpose </b>
 Melon is a bot designed to keep your server safe and engage your members. It's moderation and logging suite keep track of your members and keep your moderators accountable. It also have auto-mod capabilities that filter outs certain types of behavior when your staff team is not available. Lemon EC has it's own leveling system, custom commands system, engaging-fun-commands, informative-commands, utility commands and more!
 

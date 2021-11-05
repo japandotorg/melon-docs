@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 (module.exports = {
   title: 'MELON',
   tagline: 'A Powerful Multipurpose Bot',
-  url: 'https://localhost/3000',
+  url: 'https://melondocs.netlify.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -39,6 +39,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      algolia: {
+        apiKey: '',
+        indexName: '',
+        contextualSearch: true,
+        placeholder: 'Search',
+        appId: 'T3WTO54PPE',
+      },
       navbar: {
         title: 'MELON',
         logo: {
