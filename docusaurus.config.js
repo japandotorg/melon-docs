@@ -12,7 +12,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'japandotorg', 
-  projectName: 'melon-docs', 
+  projectName: 'melon-docs',
+
+  plugins: [
+      require.resolve('@cmfcmf/docusaurus-search-local')
+  ],
 
   presets: [
     [
@@ -37,15 +41,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   ],
 
   themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    /**
+     * @type {import('@docusaurus/preset-classic').ThemeConfig}
+     */
     ({
-      algolia: {
-        apiKey: '3b9ec763a3a4eb974186b961e97cb7de',
-        indexName: 'dev_japandotorg_melon_docs',
-        contextualSearch: true,
-        placeholder: 'Search',
-        appId: 'T3WTO54PPE',
-      },
       navbar: {
         title: 'MELON',
         logo: {
