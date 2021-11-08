@@ -1,6 +1,6 @@
 <h1 align="center">
     <p align="center">MELON DOCS</p>
-    <img align="right" src="https://cdn.discordapp.com/avatars/808706062013825036/1cac2efc38adc97309f21ca229ce4864.png?size=1024" style="border:20px solid;border-radius:50px;" height="200" width="200">
+    <img align="center" src="https://cdn.discordapp.com/avatars/808706062013825036/1cac2efc38adc97309f21ca229ce4864.png?size=1024" style="border:20px solid;border-radius:50px;" height="200" width="200">
 </h1>
  
 <p align="center">
@@ -10,4 +10,26 @@
 
 > **I'm here working hard on MELON, if you're new to MELON's user experience, try seeing the [docs](https://melondocs.netlify.app) for some help and too se what melon can do**
 
-> You can add MELON to your server by using this [link]()
+> **You can add MELON to your server by using this [link]()**
+
+### Introduction
+
+Melon is a discord bot made to make moderation and administration really easy and simple.
+
+* Utility
+> Melon comes with some powerful and useful utility commands
+* Custom Commands
+> Melon comes with the ability to create powerful custom commands through the usage of tag blocks
+* Leveling
+> Melon comes with a powerful leveling system for free
+
+### Installation
+
+You can use this repo as a template for your project/documentation website with the steps shown below:
+
+```console
+npm install \\ install the npm packages
+npm build \\ build the repo
+npx http-server ./build \\ check out the build file in your localhost, default port is 3000
+npm start \\ test and check out the repo in your localhost, default port is 3000
+```
