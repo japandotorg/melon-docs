@@ -27,9 +27,52 @@ Melon is a discord bot made to make moderation and administration really easy an
 
 You can use this repo as a template for your project/documentation website with the steps shown below:
 
-```console
-npm install \\ install the npm packages
-npm build \\ build the repo
-npx http-server ./build \\ check out the build file in your localhost, default port is 3000
-npm start \\ test and check out the repo in your localhost, default port is 3000
+```py
+npm install # install the npm packages
+npm build # build the repo
+npx http-server ./build # check out the build file in your localhost, default port is 3000
+npm start # test and check out the repo in your localhost, default port is 3000
+```
+File tree:
+```
+@japandotorg/melon-docs
+├── docs
+|   ├── custom commands
+|   |   ├── _category_.json
+|   |   ├── page1.md
+|   |   ├── page2.md
+|   |   ├── page3.md
+|   |   ├── page4.md
+|   |   └── page5.md
+|   ├── leveler
+|   |   ├── _category_.json
+|   |   └── page1.mdx
+|   ├── lockdown
+|   |   ├── _category_.json
+|   |   ├── page1.md
+|   |   └── page2.md
+|   └── intro.md
+├── plugins
+|   └── case-sensitive-paths
+|       └── index.js
+├── scripts
+|   ├── cli2md.py
+|   ├── include_stdlib.py
+|   └── requirements.txt
+├── src
+|   ├── components
+|   |   ├── BrowserWindow
+|   |   |   ├── index.tsx
+|   |   |   └──  styles.module.css
+|   |   ├── ColorGenerator
+|   |   |   ├── index.tsx
+|   |   |   └──  styles.module.css
+|   |   ├── version
+|   |   |   ├── Container.js
+|   |   |   ├── GridBlock.js
+|   |   |   └──  MarkdownBlock.js
+|   |   ├── HomepageFeatures.js
+|   |   └── HomepageFeatures.module.css
+|   ├── css
+|   |   └── custom.css
 ```
