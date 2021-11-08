@@ -1,6 +1,6 @@
 <h1 align="center">
     <p align="center">MELON DOCS</p>
-    <a href="http://melondocs.netlify.app"><img src="https://raw.githubusercontent.com/japandotorg/melon-docs/main/static/img/logo.svg?t" alt="melon docs"></a>
+    <img align="right" src="https://cdn.discordapp.com/avatars/808706062013825036/1cac2efc38adc97309f21ca229ce4864.png?size=1024" style="border:20px solid;border-radius:50px;" height="200" width="200">
 </h1>
  
 <p align="center">
