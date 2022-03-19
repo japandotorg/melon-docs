@@ -5,6 +5,10 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import { FaDiscord } from "@react-icons/all-files/fa/FaDiscord";
+import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
+import { BiLinkAlt } from "@react-icons/all-files/bi/BiLinkAlt";
+import { Col } from "react-bootstrap";
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -17,7 +21,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            DOCS
           </Link>
         </div>
       </div>
@@ -29,12 +33,46 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title}`}
+      description="Documentation site for Melon">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
       </main>
+      <Col md={12} className="home-about-social">
+        <ul className="home-about-social-links">
+          <li className="social-icons">
+            <a
+              href="https://discord.gg/AyMrA7KMSp"
+              target="_blank"
+              rel="noreferrer"
+              className="icon-colour  home-social-icons"
+            >
+              <FaDiscord />
+            </a>
+          </li>
+          <li className="social-icons">
+            <a 
+              href="https://github.com/japandotorg"
+              target="blank"
+              rel="noreferrer"
+              className="icon-colour home-social-icons"
+            >
+              <FaGithub />
+            </a>
+          </li>
+          <li className="social-icons">
+            <a 
+              href="https://japandotorg.me"
+              target="blank"
+              rel="noreferrer"
+              className="icon-colour home-social-icons"
+            >
+              <BiLinkAlt />
+            </a>
+          </li>
+        </ul>
+      </Col>
     </Layout>
   );
 }
