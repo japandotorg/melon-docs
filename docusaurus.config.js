@@ -43,7 +43,7 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'DOCS',
           },
           {
             href: 'https://github.com/japandotorg',
