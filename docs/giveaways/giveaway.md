@@ -31,6 +31,22 @@ Use [ `[p]g create` ](/docs/giveaways/giveaway#g-create) instead if you want a s
 [p]g start 1w this giveaway has no time argument --ends-at 21 january 2022 12am UTC --msg but has the '--ends-at' flag
 ```
 
+* `[p]g flash`
+
+Start multiple flash giveaways with a given prize.
+
+:::note
+
+`<amount>` is the number of giveaways to flash.
+
+These giveaways will have 1 winner and will last for 10 seconds each.
+
+:::
+
+**Syntax:** `[p]g flash <amount> <prize>`
+
+
+
 * `[p]g reroll`
 
 Reroll the winners for an ended giveaway.
@@ -60,3 +76,59 @@ Pass `all` to the message parameter to end all active giveaways in your server.
 :::
 
 **Syntax:** `[p]g end [message_id/message_link] [reason]`
+
+* `[p]g entrants`
+
+Check who has entered the giveaway until now.
+
+:::tip
+
+You can also reply to a giveaway message instead of passing it's id.
+
+:::
+
+**Syntax:** `[p]g entrants [message_id]`
+
+* `[p]g show`
+
+Show the giveaway that has the given message id.
+
+:::tip
+
+You can also reply to a giveaway message instead of passing it's id.
+
+:::
+
+**Syntax:** `[p]g show [message_id]`
+
+* `[p]g show`
+
+List all the active giveaways in a server
+
+:::danger
+
+This command can break all the giveaways in a server, please use with caution.
+
+:::
+
+**Syntax:** `[p]g list`
+
+* `[p]g top`
+
+See the giveaway managers who have performed the most giveaways in the server.
+
+**Syntax:** `[p]g top`
+
+* `[p]g explain`
+
+Start a paginated embeds session explaining how to use the commands of this cog and how it works.
+
+:::note
+
+You can pass the query parameter to see a specific explanation page.
+Valid arguments are:
+basics, requirements, flags, customization
+
+:::
+
+**Syntax:** `[p]g explain [query]`
