@@ -3,6 +3,8 @@ title: Giveaway Settings
 sidebar_position: 2
 ---
 
+This page shows the usage of configuration of the giveaways system commands.
+
 * `[p]gset autodelete`
 
 Set whether giveaway command invocations get automatically deleted or not.

@@ -3,6 +3,8 @@ title: Giveaway
 sidebar_position: 2
 ---
 
+This page shows the usage of melon's giveaways system.
+
 ## Usage
 
 * ### `[p]g create`

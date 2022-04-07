@@ -2,6 +2,9 @@
 title: TagScriptEngine Blocks
 sidebar_position: 2
 ---
+
+TagScriptEngine Blocks usage and examples.
+
 # TagScriptEngine Blocks
 
 ## Core Blocks

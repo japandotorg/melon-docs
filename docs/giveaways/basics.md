@@ -3,6 +3,8 @@ title: Basics
 sidebar_position: 1
 ---
 
+This page shows the basics for the giveaways cog.
+
 ## Features
 Melon has an easy to use giveaway system, and also have some cool features, here are a few:
 * Multiple Winners

@@ -3,7 +3,7 @@ title: Parsing Blocks
 sidebar_position: 4
 ---
 
-Parsing blocks interact with tag invocaation and the affect the tag's output in Discord
+Parsing blocks interact with tag invocaation and the affect the tag's output in Discord.
 
 ## Restriction Blocks
 
