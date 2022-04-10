@@ -148,3 +148,63 @@ This only takes effect when the --ping flag is used in giveaways.
 :::
 
 **Syntax:** `[p]gset pingrole <role>`
+
+* `[p]gset reactdm` | `[p]gset unreactdm`
+
+Set whether the user is informed in dms if their entry is added/removed to the giveaway.
+
+:::danger
+
+Please don't turn this on if your server has high giveaway joins, this setting can get the bot get flagged by discord and I'll prolly have to blacklist your server after that.
+
+:::
+
+**Syntax:** `[p]gset reactdm <status>` | `[p]gsetunreactdm <status>`
+
+* `[p]gset sdr`
+
+Set whether the default requirements set through `[p]gset bypass/blacklist` should be shown in the giveaway embed.
+
+:::note 
+
+If set to False, the requirements would still be applied but not shown in the embed itself.
+
+:::
+
+**Syntax:** `[p]gset sdr`
+
+* `[p]gset showsettings`
+
+See giveaway settings configured for your server.
+
+**Syntax:** `[p]gset showsettings`
+
+* `[p]gset tmsg`
+
+Set a custom message for giveaways.
+
+:::note
+
+This message gets sent in an embed when you use the `--thank` flag while starting a giveaway.
+
+:::
+
+Usable Variables: 
+
+`{donor}`, `{donor.mention}`, `{donor.display_name}`, `{donor.name}`, `{donor.id}`
+
+**Syntax:** `[p]gset tmsg <message>`
+
+* `[p]gset winnerdm`
+
+Customize the winner dm settings.
+
+toggle - Set whether the bot dms the winners when the giveaway ends. This won't be able to dm if the winners have their dms closed.
+
+message - Change the message that is sent to the winners when the giveaway ends.
+
+Usable Variables:
+
+`{prize}`, `{winnners}`, `{winners_amount}`, `{server}`, `{jump_url}`
+
+**Syntax:** `[p]gset winnerdm toggle <toggle>` | `[p]gset winnerdm message <message>`
