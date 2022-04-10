@@ -63,6 +63,16 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+
+  scripts: [
+    'https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js',
+    '/init.js',
+  ],
+  markdownPlugins: [(md) => {
+    md.renderer.rules.fence_custom.mermaid = (tokens, idx, options, env, instance) => {
+      return `<div class="mermaid">${tokens[idx].content}</div>`;
+    };
+  }]
 };
 
 module.exports = config;
