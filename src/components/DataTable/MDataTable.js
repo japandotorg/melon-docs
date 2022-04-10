@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTable, useSortBy } from 'react-table';
-import "./styles.css";
+import "./style.css";
 
 const defaultPropGetter = () => ({});
 

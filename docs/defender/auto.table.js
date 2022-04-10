@@ -1,6 +1,6 @@
 import React from "react";
 
-export const articles = [
+export const auto = [
     {
         module: "Invite Filter",
         description: "Detects and takes action on unwanted Discord invites posted in your community."
@@ -23,7 +23,7 @@ export const articles = [
     }
 ];
 
-export const columns = [
+export const col = [
     {
         Header: "Module",
         accessor: "module",

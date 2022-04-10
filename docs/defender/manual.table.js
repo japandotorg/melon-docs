@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const articles = [
+export const manual = [
     {
         module: "Alert",
         description: "Allows your helper roles to report threats to the staff. Upon \"ringing the bells\" the staff is privately pinged with detailed context as to where the emergency is taking place. Additionally, this module can be configured so that after a certain time with no staff activity the server enters a state of emergency and certain modules (such as voteout) are rendered available to helpers.",
@@ -19,7 +19,7 @@ export const articles = [
     }
 ];
 
-export const columns = [
+export const col = [
     {
         Header: "Module",
         accessor: "module",
