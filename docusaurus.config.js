@@ -19,7 +19,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          remarkPlugins: [require('mdx-mermaid')],
+          remarkPlugins: [require('mdx-mermaid'), { mermaid: { theme: 'dark' } }],
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/japandotorg/melon-docs/tree/dev',
         },

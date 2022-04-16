@@ -7,8 +7,6 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 import nse from '../../static/img/docs/scam-example.png';
-import amf from '../../static/img/docs/auto-modules.png';
-import rf from '../../static/img/docs/rank-flow.png';
 import atm from '../../static/img/docs/auto.png'
 import mtm from '../../static/img/docs/manual.png'
 
@@ -31,7 +29,25 @@ Each module is <i>optional</i>, meaning that you can decide to only enable speci
 Despite being designed to counter serious threats Defender can also be a very valuable tool for smaller 
 communities with less traffic.
 
-<img src={amf} alt="Auto Modules Flowchart" />
+<Mermaid
+  chart={`
+    %%{init: { 'theme': 'dark' } }%%
+    graph TD
+        A[Auto modules];
+        A -.- B[(Invite filter)]
+        A -.- C[(Join monitor)];
+        A -.- D[(Raider detection)];
+        A -.- E[(Comment analysis)];
+        A -.- F[(Warden)];
+        G[Manual modules];
+        G -.- H[(Alert)]
+        G -.- I[(Vaporize)];
+        G -.- J[(Silence)];
+        G -.- K[(Voteout)];
+        D -.- G
+        linkStyle 9 stroke-width:0px;
+`}
+/>
 
 <Tabs>
     <TabItem value="auto" label="Auto Modules" default>
@@ -51,7 +67,15 @@ meaning that your regular users will be safe from the many safety measures that 
 A regular user will only be able to rank up until Rank 2. Rank 1 is considered a special rank that can only be attained 
 through designed roles or by being a staff member. <br /> <br />
 
-<img src={rf} alt="Rank System Flowchart" /> <br /> <br />
+<Mermaid
+  chart={`
+    %%{init: { 'theme': 'dark' } }%%
+    graph BT
+        A[Rank 4] --> | Time since join or messages sent | B[Rank 3];
+        B --> | Time since join | C[Rank 2];
+        C -.-> | Special role or staff | D[Rank 1];
+`}
+/>
 
 :::tip
 
