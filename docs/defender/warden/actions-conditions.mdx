@@ -186,11 +186,11 @@ Is `true` if the channel exceeds the specified [heat level](#heat-level)  <br />
 **Accepts:** A number between 0 and 100    <br />
 **Context:** `message`  <br />
 * `custom-heat-is`  <br />
-Is `true` if the [custom heat](/deender/warden/overview#custom-heat-level) has the specified level  <br />
+Is `true` if the [custom heat](/defender/warden/overview#custom-heat-level) has the specified level  <br />
 **Accepts:** A list with two elements: the custom heat level name and a number between 0 and 100. Rule name and IDs [context variables](/defender/warden/overview#context-variables) are available for the name.  <br />
 **Context:** `Any`  <br />
 * `custom-heat-more-than`  <br />
-Is `true` if the [custom heat](/deender/warden/overview#custom-heat-level) exceeds the specified level  <br />
+Is `true` if the [custom heat](/defender/warden/overview#custom-heat-level) exceeds the specified level  <br />
 **Accepts:** A list with two elements: the custom heat level name and a number between 0 and 100. Rule name and IDs [context variables](/defender/warden/overview#context-variables) are available for the name.  <br />
 **Context:** `Any` <br />
 * `compare`  <br />
@@ -326,7 +326,7 @@ Adds multiple heat points with the specified lifetime to the channel's [heat lev
 **Example:** `add-channel-heatpoints: [10, 5 seconds]` `add-channel-heatpoints: [2, 1m]`  <br />
 * `add-custom-heatpoint`  <br />
 Adds a single heat point with the specified lifetime to the [custom heat level](/defender/warden/overview#custom-heat-level)  <br />
-**Accepts:** A list containing two elements: a string representing the custom heat level name and a string representing the heat point's lifetime. Some examples: '5 seconds', '2 minutes', '4 hours'. Rule name and IDs [context variables](/deender/warden/overview#context-variables) are available for the name.  <br />
+**Accepts:** A list containing two elements: a string representing the custom heat level name and a string representing the heat point's lifetime. Some examples: '5 seconds', '2 minutes', '4 hours'. Rule name and IDs [context variables](/defender/warden/overview#context-variables) are available for the name.  <br />
 **Context:** `Any`  <br />
 **Example:** `add-custom-heatpoint: ["filter-$user_id", "5 seconds"]`  <br />
 * `add-custom-heatpoints`  <br />
@@ -348,7 +348,7 @@ Sets the specified [custom heat level](/defender/warden/overview#custom-heat-lev
 **Context:** `Any`  <br />
 * `issue-command`  <br />
 Will issue a bot command as if it was issued by the specified user. The specified user must be the rule's author. If no destination is specified issuing a command in a `message` context will make it issue in the same channel as the message's; in any other case the command will be issued in Defender's notification channel.  <br />
-**Accepts:** A list with two elements: a number representing the ID of the rule's author and a string representing the command to issue. The command must not contain the prefix. [Context variables](/deender/warden/overview#context-variables) are supported. The long form of this action also supports a destination.  <br />
+**Accepts:** A list with two elements: a number representing the ID of the rule's author and a string representing the command to issue. The command must not contain the prefix. [Context variables](/defender/warden/overview#context-variables) are supported. The long form of this action also supports a destination.  <br />
 **Context:** `Any`  <br />
 **Example:**
 
