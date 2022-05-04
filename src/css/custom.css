@@ -6,7 +6,16 @@
   --ifm-color-primary-light: #fbf4da;
   --ifm-color-primary-lighter: #fdfaed;
   --ifm-color-primary-lightest: #ffffff;
-  --ifm-code-font-size: 95%;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #f7e9b3;
+  --ifm-color-primary-dark: #f3de8c;
+  --ifm-color-primary-darker: #f1d879;
+  --ifm-color-primary-darkest: #ebc83f;
+  --ifm-color-primary-light: #fbf4da;
+  --ifm-color-primary-lighter: #fdfaed;
+  --ifm-color-primary-lightest: #ffffff;
 }
 
 .docusaurus-highlight-code-line {
@@ -22,8 +31,8 @@ html[data-theme='dark'] {
 }
 
 html[data-theme='light'] {
-  --ifm-color-primary: #050505;
-  --ifm-color-primary-light: #050505;
+  --ifm-color-primary-light: #fbf4da;
+  --ifm-color-primary-lighter: #fdfaed;
 }
 
 .header-github-link:hover {
