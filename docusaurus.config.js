@@ -5,7 +5,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'MELON',
   tagline: 'A Powerful Multipurpose Bot',
-  url: 'https://melondocs.netlify.app',
+  url: 'https://guide.melonbot.io/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
