@@ -9,33 +9,31 @@ def get_or(d, k, e):
         e
 
 def print_args(c):
-    if 'args' in c:
-        print()
-        print(f"**Args**")
-        args = c['args']
-        print("""
+    if 'args' not in c:
+        return
+    print()
+    print("**Args**")
+    args = c['args']
+    print("""
         |Attribute|Description|
         |---------|-----------|
         """)
-        for a in args:
-            for name, arg in a .items():
-                if get_or(arg, 'takes_value', False) == True:
-                    kind = "argument"
-                else:
-                    kind = "switch/flag"
-                if 'multiple' in arg and arg['multiple'] == True:
-                    multiple = "yes"
-                else:
-                    multiple = "no"
-                print(
-                    f"|{attribute}{get_or(arg, 'short', '-')}|{arg['about'].strip()}|"
-                )
+    for a in args:
+        for name, arg in a .items():
+            if get_or(arg, 'takes_value', False) == True:
+                kind = "argument"
+            else:
+                kind = "switch/flag"
+            multiple = "yes" if 'multiple' in arg and arg['multiple'] == True else "no"
+            print(
+                f"|{attribute}{get_or(arg, 'short', '-')}|{arg['about'].strip()}|"
+            )
 
 def print_commands(c, pfx=""):
     if 'subcommands' in c:
         subcommands = c['subcommands']
         print()
-        print(f"**Subcommands**")
+        print("**Subcommands**")
         print("""
         |Command|Description|
         |-------|-----------|
@@ -58,7 +56,7 @@ def print_subcommands(p, c):
         if 'args' in command:
             for cmd_args in command['args']:
                 for arg_name, arg in cmd_args.item():
-                    if not 'short' in arg and not 'long' in arg:
+                    if 'short' not in arg and 'long' not in arg:
                         if get_or(arg, 'required', False):
                             args.append(f"<{arg_name}>")
                         else:
@@ -66,11 +64,11 @@ def print_subcommands(p, c):
         print()
         print(f"{command['about']}")
         print()
-        if not 'subcommands' in command:
-            print(f"**Usage**")
+        if 'subcommands' not in command:
+            print("**Usage**")
             print()
             print("```")
-            if len(args) > 0:
+            if args:
                 print(f"melon {' '.join(subp)} {' '.join(args)}")
             else:
                 print(f"melon {' '.join(subp)}")
