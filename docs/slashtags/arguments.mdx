@@ -1,0 +1,29 @@
+---
+title: Slash Arguments
+sidebar_position: 2
+---
+
+SlashTags support up to 10 arguments with multiple types, allowing for flexibility and advanced user input handling.
+
+### Adding Arguments
+
+Similar to the initial slash tag creation process, adding arguments to slash tags follows an interactive setup. You can either choose to add arguments while creating a slash tag, or by editing them later with `[p]slashtag edit arguments <slashtag>`.
+
+## Argument Types
+
+Type    | Description     | Example      | Adapter
+--------|-----------------|--------------|-----------
+String | Accepts any user inputted text as an argument. | `{string}` | StringAdapter
+Integer | Only allows integer input for the argument. | `{integer}` | IntAdapter
+Boolean | Allows either `True` or `False` as input. | `{boolean}` | StringAdapter
+User | Refers to a member of the server or a member in the DM chanel, accepting username or IDs as input. | `{user(name)}` | MemberAdapter
+Channel | Refers to a text, voice, or category channel in this server, accepting channel names or IDs as input. | `{channel(topic)}` | ChannelAdapter
+Role | Refers to a server role, accepting role name or IDs as input. | `{role(id)}` | SafeObjectAdapter
+Number | Accepts any floating point number. | `{number}` | StringAdapter
+Choices | Offers a list of choices for the user to pick. Each option has a name and underlying value which is returned as string argument when accessed. | `{choice}` | StringAdapter
+
+## Argument Usage
+
+A slash tag's argument can be accessed in its tagscript through the use of variable block. For example, if a slash tag has a argument named `member`, it could be accessed with `{member}`.
+
+Additionally, slash tag arguments of the channel, role, or user type support attribute access through the block parameter such as `{member(nick)}`.
