@@ -51,4 +51,4 @@ Tags come with built-in variable blocks you can access for more information abou
 - `channel`
 - `server`
 
-You can see attributes available using these blocks in Default Variables.
+You can see attributes available using these blocks in [Default Variables](/docs/custom-commands/variables).
