@@ -1,0 +1,82 @@
+---
+title: Permissions Cog Reference
+sidebar_position: 2
+---
+
+## How it works
+
+When loaded, the permissions cog will allow you to define extra custom rules for who can use a command.
+
+If no applicable rules are found, the command will behave normally.
+
+Rules can also be added to cogs, which will affect all commands from that cog. The cog name can be found from the help menu.
+
+## Rule priority
+
+Rules set for subcommands will take precedence over rules set for the parent commands, which lastly take precedence over rules set for the cog. So for example, if a user is denied the `Warnings` cog, but allowed the `[p]warn`n command, the user will not be able to use any command in the `Warnings` cog except for `[p]warn`.
+
+In terms of scope, global rules will be checked first, then server rules.
+
+For each of those, the first rule pertaining to one of the following models will be used:
+
+- User
+- Voice Channel
+- Text Channel
+- Channel Category
+- Roles, highest to lowest
+- Server (can only be in global rules) [Developer]
+- Default rules
+
+In private messages, only global rules about a user will be checked.
+
+## Settings Rules From A File
+
+The permissions cog can also set, display or update rules with a YAML file with the `[p]permissions yaml` command. Models must be represented by ID. Rules must be `true` for allow, or `false` for deny.
+Here is an example:
+
+```yaml
+COG:
+  Admin:
+    954636730110210048: true
+    960457765942329354: false
+  Warnings:
+    954636730110210048: true
+    default: false
+COMMAND:
+  cleanup bot:
+    954636730110210048: true
+    default: false
+  ping:
+    994480580773285898: false
+    default: true
+```
+
+## Example configurations
+
+Locking the `[p]warn` command to approved server(s) as a bot owner:
+
+```
+[p]permissions setdefaultglobalrule deny warn
+[p]permissions addglobalrule allow warn [server ID or name]
+```
+
+Locking the `[p]ban` command to specific voice channel(s) as a serverowner or admin:
+
+```
+[p]permissions setdefaultserverrule deny warn
+[p]permissions setdefaultserverrule deny "warningset senddm"
+[p]permissions addserverrule allow warn [Text channel ID or name]
+[p]permissions addserverrule allow "warningset senddm" [Text channel ID or name]
+```
+
+Allowing extra roles to use `[p]cleanup`:
+
+```
+[p]permissions addserverrule allow cleanup [role ID]
+```
+
+Preventing `[p]cleanup` from being used in channels where message history is important:
+
+```
+[p]permissions addserverrule deny cleanup [channel ID or mention]
+```
