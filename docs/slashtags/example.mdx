@@ -1,0 +1,31 @@
+---
+title: Example Slash Tags
+sidebar_position: 4
+---
+
+The following examples show the capabilities of slasht tags.
+
+## Command Execution Example
+
+This slash tag adds a `/ban` command that can be used to ban users.
+
+Arguments:
+
+Name | Description | Type | Required
+-----|-------------|------|---------
+`victim` | A member to ban. | `member` | True
+`reason` | The reason for the ban | `string` | False
+
+```
+`[p]slashtag add ban {c:ban {victim(id)} {reason}}
+```
+
+## Context Menu Example
+
+This slash tag adds a view user info user command that shows user information by invoking the user info command.
+
+Arguments: **None**
+
+```py
+[p]slashtag user "View user info" {c:userinfo {target_id}}
+```
