@@ -25,10 +25,10 @@ I.E the end message, and dms are not processed. The giveaway message is deleted 
 **Syntax:** `[p]g cancel [message_id]`
 
 ```js title="Example:"
-[p]g end 12345678901234567890
+[p]g cancel 12345678901234567890
 
 // or if you want to reply to a message
-[p]g end x
+[p]g cancel x
 ```
 
 * ### `[p]g create`
