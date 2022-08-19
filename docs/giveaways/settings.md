@@ -5,7 +5,9 @@ sidebar_position: 2
 
 This page shows the usage of configuration of the giveaways system commands.
 
-* `[p]gset autodelete`
+## Usage:
+
+* ### `[p]gset autodelete`
 
 Set whether giveaway command invocations get automatically deleted or not.
 
@@ -20,7 +22,7 @@ Pass true to delete and false to not.
 
 ![autodel example](https://shoot-up-a.school/VhndHcvRlDGRDUjx/IaJ72Pr0.png)
 
-* `[p]gset backup`
+* ### `[p]gset backup`
 
 Get a file from the bot containing giveaway customization data for your server.
 
@@ -28,7 +30,7 @@ Get a file from the bot containing giveaway customization data for your server.
 
 ![backup example](https://shoot-up-a.school/7XO498hSacT1SK-b/fSOOe6Fl.png)
 
-* `[p]gset blacklist`
+* ### `[p]gset blacklist`
 
 Blacklist roles from giveaway permanently without having to pass them as requirements each time.
 
@@ -38,13 +40,13 @@ Sending nothing will show a list of blacklisted roles.
 
 **Syntax:** `[p]gset blacklist [roles..]`
 
-* `[p]gset bypass`
+* ### `[p]gset bypass`
 
 See a list of roles that can bypass requirements in giveaways.
 
 **Syntax:** `[p]gset bypass add [roles...]` | `[p]gset bypass remove [roles...]`
 
-* `[p]gset defaults`
+* ### `[p]gset defaults`
 
 Revert all customizable settings for giveaways to their defaults.
 
@@ -58,7 +60,7 @@ For commands that support this, it is mentioned in their documentation.
 
 **Syntax:** `[p]gset defaults`
 
-* `[p]gset disabledm`
+* ### `[p]gset disabledm`
 
 Toggle whether the bot is allowed to dm you regarding giveaway notifications or not.
 
@@ -74,7 +76,7 @@ This is a global setting for each separate user. This will disallow the bot for 
 
 ![disabledm example](https://shoot-up-a.school/VrVjE7uonpZLFtyW/QOjSoTyG.png)
 
-* `[p]gset embed`
+* ### `[p]gset embed`
 
    Customize the giveaway embed.
 
@@ -130,7 +132,7 @@ This is a global setting for each separate user. This will disallow the bot for 
 
     **Syntax:** `[p]gset embed title <title>`
 
-* `[p]gset emoji`
+* ### `[p]gset emoji`
 
 Set a custom giveaway emoji that the bot reacts with on giveaway embeds.
 
@@ -142,7 +144,7 @@ The bot must have access to the emoji to be used.
 
 **Syntax:** `[p]gset emoji <emoji>`
 
-* `[p]gset endmsg`
+* ### `[p]gset endmsg`
 
 Set the message that gets sent when a giveaway ends.
 
@@ -152,7 +154,7 @@ Useable variables:
 
 **Syntax**: `[p]gset endmsg <message>`
 
-* `[p]gset entryaccepteddm/entryrejecteddm`
+* ### `[p]gset entryaccepteddm/entryrejecteddm`
 
 Set a message that gets sent to a user when their entry gets accepted/rejected for a giveaway (AKA they passed or did not pass all the requirements, if any).
 
@@ -180,7 +182,7 @@ This setting supports the {embed} block.
 
 **Syntax:** `[p]gset entryaccepteddm <message>` | `[p]gset entryrejecteddm <message>`
 
-* `[p]gset header`
+* ### `[p]gset header`
 
 Set a custom giveaway message. This message shows above the giveaway embed.
 
@@ -192,7 +194,7 @@ You can set this to the default message by passing `default` as the first argume
 
 **Syntax**: `[p]gset header <message>`
 
-* `[p]gset hostdm`
+* ### `[p]gset hostdm`
 
 Customize the host dm settings. Not passing a message would disable dming the host.
 
@@ -230,7 +232,7 @@ Winners are: {winners(all)}
 {jump_url}}
 ```
 
-* `[p]gset manager`
+* ### `[p]gset manager`
 
 Shows the list of manager roles for this server. 
 
@@ -240,13 +242,13 @@ If these aren't set, then manage message permissions or the bot's mod role will 
 
 **Syntax:** `[p]gset manager add [roles...]` | `[p]gset manager remove [roles...]`
 
-* `[p]gset multi`
+* ### `[p]gset multi`
 
 Add a multipier to a given role. This will increase the chances of the members of that role to win in giveaways. See a list for all roles that have multipliers in giveaways in this server. Use subcommands to add or remove roles from the multiplier list.
 
 **Syntax:** `[p]gset multi add <role> <multi>` | `[p]gset multi remove <role> <multi>`
 
-* `[p]gset pingrole`
+* ### `[p]gset pingrole`
 
 Set which role gets pinged in giveaways.
 
@@ -258,7 +260,7 @@ This only takes effect when the --ping flag is used in giveaways.
 
 **Syntax:** `[p]gset pingrole <role>`
 
-* `[p]gset removereact`
+* ### `[p]gset removereact`
 
 Toggle whether the bot removed reactions from the giveaway message if a user does not pass the requirements.
 
@@ -278,7 +280,7 @@ Please don't turn this on if your server has high giveaway joins, this setting c
 
 ![removereact example](https://shoot-up-a.school/sugceP5kAo5xPggi/m31MWgJ8.png)
 
-* `[p]gset restore`
+* ### `[p]gset restore`
 
 Restore a giveaway settings backup from a file provided by the bot.
 
@@ -296,7 +298,7 @@ The message argument is the message id of the backup file message.
 ![restore example](https://shoot-up-a.school/sBj_pHep5N1c_lEN/qsMb2l46.png)
 
 
-* `[p]gset sdr`
+* ### `[p]gset sdr`
 
 Set whether the default requirements set through `[p]gset bypass/blacklist` should be shown in the giveaway embed.
 
@@ -308,13 +310,13 @@ If set to False, the requirements would still be applied but not shown in the em
 
 **Syntax:** `[p]gset sdr`
 
-* `[p]gset showsettings`
+* ### `[p]gset showsettings`
 
 See giveaway settings configured for your server.
 
 **Syntax:** `[p]gset showsettings`
 
-* `[p]gset tmsg`
+* ### `[p]gset tmsg`
 
 Set a custom message for giveaways.
 
@@ -336,19 +338,19 @@ You can set this to the default message by passing `default` as the first argume
 
 **Syntax:** `[p]gset tmsg <message>`
 
-* `[p]gset unblacklist`
+* ### `[p]gset unblacklist`
 
 Unblacklist given roles from giveaways permanently.
 
 **Syntax:** `[p]gset unblacklist [roles...]`
 
-* `[p]gset unreactdm`
+* ### `[p]gset unreactdm`
 
 Set whether the user is informed in dms if their reaction is removed by a third-party.
 
 **Syntax:** `[p]gsetunreactdm <status>`
 
-* `[p]gset winnerdm`
+* ### `[p]gset winnerdm`
 
 Customize the winner dm message.
 
