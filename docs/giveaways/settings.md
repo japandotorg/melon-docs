@@ -160,7 +160,7 @@ Set a message that gets sent to a user when their entry gets accepted/rejected f
 
 entryrejecteddm - `{prize}` `{host}` `{jump_url}` `{server}` `{member}` `{reason}`
 
-::note
+:::note
 
 `{reason}` is a pre formatted string detailing the reason why the user's entry was rejected.
 
