@@ -33,10 +33,10 @@ Flags are provided after the title for the giveaway in the [`[p]g start`](/docs/
 
     :::note
 
-      If not explicitly used, 
-      the bot will try to select different users to be the winners for the giveaway to satisfy the amount of winners specified.
+    If not explicitly used, 
+    the bot will try to select different users to be the winners for the giveaway to satisfy the amount of winners specified.
 
-      If it fails to do so (AKA there weren't enough entrants), all entrants would be considered as winners.
+    If it fails to do so (AKA there weren't enough entrants), all entrants would be considered as winners.
 
     :::
 
