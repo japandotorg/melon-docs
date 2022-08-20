@@ -149,7 +149,7 @@ Start a giveaway with a prize.
 
 :::tip
 
-The time argument is optional, you can instead use the `--ends-at` flag to specify more accurate time span.
+The time argument is optional, you can instead use the [`--ends-at`](/docs/giveaways/flags#--ends-at) flag to specify more accurate time span.
 
 :::
 
