@@ -31,14 +31,14 @@ Flags are provided after the title for the giveaway in the [`[p]g start`](/docs/
 
       Purpose: This flag toggles the option for a user to be chosen multiple times as the winner for the same giveaway.
 
-      :::note
+:::note
 
       If not explicitly used, 
       the bot will try to select different users to be the winners for the giveaway to satisfy the amount of winners specified.
 
       If it fails to do so (AKA there weren't enough entrants), all entrants would be considered as winners.
 
-      :::
+:::
 
       Usage: `--allow-multiple-winners`
 
@@ -58,17 +58,17 @@ Flags are provided after the title for the giveaway in the [`[p]g start`](/docs/
 
       Usage: `--channel <channel>`
 
-      :::note
+:::note
 
       If not explicitly used, the bot will send the giveaway in the channel the command was used in.
 
-      :::
+:::
 
-      :::note
+:::note
 
       `<channel>` can be a channel mention, channel id, or channel name.
 
-      :::
+:::
       
       ```js title="Example:"
 
@@ -87,11 +87,11 @@ Flags are provided after the title for the giveaway in the [`[p]g start`](/docs/
 
       Usage: `--donor <user>`
 
-      :::note
+:::note
 
       `<user>` can be either a mention, an id, or simply a username
 
-      :::
+:::
       
       ```js title="Example:"
 
@@ -109,21 +109,21 @@ Flags are provided after the title for the giveaway in the [`[p]g start`](/docs/
 
       Purpose: This flag sets the time the giveaway will end.
 
-      :::tip
+:::tip
 
       Use this flag if you want to set an accurate time for the giveaway to end.
 
       This flag accepts almost every date format you can give it.
 
-      :::
+:::
 
-      :::note
+:::note
       
       If the `<time>` argument is not specified in the giveaway command, usage of this flag will be compulsory.
 
       This flag holds precedence over the `<time>` argument.
 
-      :::
+:::
 
       Usage: `--ends-at <time>`
       
@@ -141,17 +141,17 @@ Flags are provided after the title for the giveaway in the [`[p]g start`](/docs/
 
       Purpose: This flag sets role multipliers specific to the current giveaway.
 
-      :::note
+:::note
 
       Role multipliers act as an entry multiplier for users that joined the giveaway and have the specified role.
 
       Entries are added up for each role multiplier a user has.
 
-      :::
+:::
 
       Usage: `--extra-multi <role-multi-pairs>`
 
-      :::note
+:::note
 
       `<role-multi-pairs>` is a space separated list of role names and multipliers.
 
@@ -159,7 +159,7 @@ Flags are provided after the title for the giveaway in the [`[p]g start`](/docs/
 
       where `<role>` can be a role mention, role id, or role name, and `<multi>` is a number.
       
-      :::
+:::
       
       ```js title="Example:"
 
@@ -202,11 +202,11 @@ Flags are provided after the title for the giveaway in the [`[p]g start`](/docs/
 
       Purpose: This flag disables the donor from joining the current giveaway.
 
-      :::note
+:::note
 
       The donor defaults to the host of the giveaway if not provided using the [`--donor`](/docs/giveaways/flags#--donor) flag.
 
-      :::
+:::
       
       Usage: `--no-donor`
       
@@ -234,13 +234,13 @@ Flags are provided after the title for the giveaway in the [`[p]g start`](/docs/
       
       Purpose: This flag sets the time the giveaway will start.
       
-      :::tip
+:::tip
       
       Use this flag if you want to set an accurate time for the giveaway to start.
       
       This flag accepts almost every date format you can give it.
       
-      :::
+:::
       
       Usage: `--starts-at <time>`
       
@@ -268,11 +268,11 @@ Flags are provided after the title for the giveaway in the [`[p]g start`](/docs/
 
       Purpose: This flag will send a thank you message alongside the giveaway message thanking the donor.
 
-      :::note
+:::note
       
       This message is customizable as you want through the [`[p]gset tmsg`](/docs/giveaways/settings#pgset-tmsg) command.
 
-      :::
+:::
       
       Usage: `--thank`
       
@@ -290,7 +290,7 @@ Flags are provided after the title for the giveaway in the [`[p]g start`](/docs/
 
       Purpose: This flags adds the given amount to the donor's (or host's if donor is not specified) donation balance.
 
-      :::tip
+:::tip
 
       This flag accepts most of the amount formats commonly used.
       Such as exponents (1e3), decimals (1.5), and k-notation (2k).
@@ -300,13 +300,13 @@ Flags are provided after the title for the giveaway in the [`[p]g start`](/docs/
 
       These formats can be combined all together to create a larger amount.
 
-      :::
+:::
 
-      :::note
+:::note
 
       This flag is only usable if the `DonationLogging` cog is loaded on the bot
 
-      :::
+:::
 
       Usage: `--amount <amount>`
       
@@ -326,13 +326,13 @@ Flags are provided after the title for the giveaway in the [`[p]g start`](/docs/
 
       Purpose: This flag will set the bank to be used to add the amount set with [`--amount`](/docs/giveaways/flags#--amount).
 
-      :::note
+:::note
 
       This flag is only usable if the `DonationLogging` cog is loaded on the bot and is to be used in conjunction with the [`--amount`](/docs/giveaways/flags#--amount) flag.
 
       If this flag is not used, the default bank will be used.
 
-      :::
+:::
 
       Usage: `--bank <bank>`
       
@@ -348,11 +348,11 @@ Flags are provided after the title for the giveaway in the [`[p]g start`](/docs/
 
       Purpose: This flag sets the number of messages required to join the giveaway.
 
-      :::tip
+:::tip
 
       This flag can be used as an alternative to providing this requirement in the `[requirements]` argument of the [`[p]g start`](/docs/giveaways/giveaway#pg-start) command.
 
-      :::
+:::
 
       Usage: `--messages <amount>`
       
@@ -370,27 +370,27 @@ Flags are provided after the title for the giveaway in the [`[p]g start`](/docs/
 
       Purpose: This flag sets the channels in which the messages requirement will be checked.
 
-      :::tip
+:::tip
 
       Use this flag if you want to limit which channel the messages requirement will be checked in.
 
       You can specify multiple channel by splitting them with a space.
 
-      :::
+:::
 
-      :::note
+:::note
 
       If this flag is not used, the message requirement will be valid in all channels.
 
-      :::
+:::
 
       Usage: `--message-channel <channel>`
       
-      :::note
+:::note
 
       `<channel>` can be multiple channel IDs, channel names, or channel mentions split by a space.
       
-      :::
+:::
 
       ```js title="Example:"
 
@@ -408,12 +408,12 @@ Flags are provided after the title for the giveaway in the [`[p]g start`](/docs/
 
       Purpose: This flag sets the cooldown for the giveaway's message requirements.
 
-      :::note
+:::note
 
       This flag basically just adds delay between the emssage count for a user. 
       Meaning this will prevent messages being counted if they spam messages.
 
-      :::
+:::
 
       Usage: `--cooldown <time in seconds>`
       
