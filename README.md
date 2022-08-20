@@ -1,41 +1,16 @@
-# Website
+# Melon Docs
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+A guide with which you can explore some of the many possibilites of Melon.
 
-### Installation
+## About
 
-```
-$ yarn
-```
+This guide is aimed at users who are either unfamiliar or inexperienced with Melon. It assumes you have a basic understanding of Discord bots.
 
-### Local Development
+* How to add a bot in your server.
+* How to properly setup role configuration of a bot in your server.
+* How to setup proper hierarchies of roles in your server.
+* And much more...
 
-```
-$ yarn start
-```
+## Contributing
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+If you're interested in contributing to this guide, you should check out our [GitHub Project](https://github.com/users/japandotorg/projects/4) page or [open an issue](https://github.com/japandotorg/melon-docs/issues). There's a [contribution guide](https://github.com/japandotorg/melon-docs/blob/dev/CONTRIBUTING.md) you should read once you decide on what you want to contribute to.
