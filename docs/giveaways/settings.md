@@ -20,7 +20,7 @@ Pass true to delete and false to not.
 [p]gset autodelete false
 ```
 
-![autodel example](https://shoot-up-a.school/VhndHcvRlDGRDUjx/IaJ72Pr0.png)
+
 
 * ### `[p]gset backup`
 
@@ -28,7 +28,7 @@ Get a file from the bot containing giveaway customization data for your server.
 
 **Syntax:** `[p]gset backup`
 
-![backup example](https://shoot-up-a.school/7XO498hSacT1SK-b/fSOOe6Fl.png)
+
 
 * ### `[p]gset blacklist`
 
@@ -74,7 +74,7 @@ This is a global setting for each separate user. This will disallow the bot for 
 [p]gset disabledm false
 ```
 
-![disabledm example](https://shoot-up-a.school/VrVjE7uonpZLFtyW/QOjSoTyG.png)
+
 
 * ### `[p]gset embed`
 
@@ -278,7 +278,7 @@ Please don't turn this on if your server has high giveaway joins, this setting c
 [p]gset removereact false
 ```
 
-![removereact example](https://shoot-up-a.school/sugceP5kAo5xPggi/m31MWgJ8.png)
+
 
 * ### `[p]gset restore`
 
@@ -295,7 +295,7 @@ The message argument is the message id of the backup file message.
 [p]gset restore x
 ```
 
-![restore example](https://shoot-up-a.school/sBj_pHep5N1c_lEN/qsMb2l46.png)
+
 
 
 * ### `[p]gset sdr`

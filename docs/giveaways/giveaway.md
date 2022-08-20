@@ -60,9 +60,9 @@ Pass `all` to the message parameter to end all active giveaways in your server.
 [p]g end x
 ```
 
-![end example 1](https://shoot-up-a.school/BdUQJISoFbe6Yopi/cPvc_93a.png)
-![end example 2](https://shoot-up-a.school/A1G3GPdWJUUOmC3F/3ALpVtg0.png)
-![end example 3](https://shoot-up-a.school/-_228E40OdfGZ4sm/dK1WGg3t.png)
+
+
+
 
 * ### `[p]g entrants`
 
@@ -83,7 +83,7 @@ You can also reply to a giveaway message instead of passing it's id.
 [p]g entrants x
 ```
 
-![entrants example](https://shoot-up-a.school/VAHqPgrYfD3tJrEe/2qTU6V_N.png)
+
 
 * ### `[p]g flash`
 
@@ -103,7 +103,7 @@ These giveaways will have 1 winner and will last for 20 seconds each.
 [p]g flash 10 Flash giveaways.
 ```
 
-![flash example](https://shoot-up-a.school/mlHBDHGuSzw_LgHS/1QcIo50Z.png)
+
 
 * ### `[p]g list`
 
@@ -115,7 +115,7 @@ List all the active giveaways in a server.
 [p]g list
 ```
 
-![list example](https://shoot-up-a.school/21VmjQ3-5UZ7Jrtz/oAZXI-vc.png)
+
 
 * ### `[p]g reroll`
 
@@ -140,8 +140,8 @@ You can also reply to a giveaway message instead of passing it's id.
 [p]g reroll x 2 True
 ```
 
-![reroll example 1](https://shoot-up-a.school/93xv4HL39wB6el2k/jImqBj6r.png)
-![reroll example 2](https://shoot-up-a.school/8JtNJRCXgfDLXqP5/FSs84QWp.png)
+
+
 
 * ### `[p]g start`
 
@@ -165,9 +165,9 @@ Use [ `[p]g create` ](/docs/giveaways/giveaway#pg-create) instead if you want a 
 [p]g start 1w this giveaway has no time argument --ends-at 20 august 2022 12am UTC --msg but has the '--ends-at' flag
 ```
 
-![giveaway example 1](https://shoot-up-a.school/CTvo0a-L3E3BfiVN/pFNjgYsY.png)
-![giveaway example 2](https://shoot-up-a.school/ThjuFFFSlvaBlGQf/1Qn1nqem.png)
-![giveaway example 3](https://shoot-up-a.school/l9osDs7JEIHcOIoI/5H7opVWS.png)
+
+
+
 
 * ### `[p]g show`
 
@@ -188,8 +188,8 @@ You can also reply to a giveaway message instead of passing it's id.
 [p]g show x
 ```
 
-![show example](https://shoot-up-a.school/9S37-MhaIFmmxuUK/KbB4qE75.png)
-![show example 2](https://shoot-up-a.school/NX2gus_zUcgrML3n/O7bNip1W.png)
+
+
 
 * ### `[p]g top`
 
@@ -201,4 +201,3 @@ See the giveaway managers who have performed the most giveaways in the server.
 [p]g top
 ```
 
-![top example](https://shoot-up-a.school/QyGdYOaXmcGHBY7t/s4duauQj.png)
