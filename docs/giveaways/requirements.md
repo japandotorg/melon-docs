@@ -80,7 +80,7 @@ Multiple requirements can be grouped together by separating them with either a c
 
 :::
 
-::caution
+:::caution
 
 Requirements will be completely skipped over if even 1 value is invalid so use caution when specifying requirements.
 
