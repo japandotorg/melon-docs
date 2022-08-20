@@ -23,407 +23,407 @@ Flags are provided after the title for the giveaway in the [`[p]g start`](/docs/
 
 ## Flag names, usage and effect
 
-### Regular Flags
+* ### Regular Flags
 
-* ### `--allow-multiple-winners`
+  * ### `--allow-multiple-winners`
 
-    Alias: `--amw`
+      Alias: `--amw`
 
-    Purpose: This flag toggles the option for a user to be chosen multiple times as the winner for the same giveaway.
+      Purpose: This flag toggles the option for a user to be chosen multiple times as the winner for the same giveaway.
 
-    :::note
+      :::note
 
-    If not explicitly used, 
-    the bot will try to select different users to be the winners for the giveaway to satisfy the amount of winners specified.
+      If not explicitly used, 
+      the bot will try to select different users to be the winners for the giveaway to satisfy the amount of winners specified.
 
-    If it fails to do so (AKA there weren't enough entrants), all entrants would be considered as winners.
+      If it fails to do so (AKA there weren't enough entrants), all entrants would be considered as winners.
 
-    :::
+      :::
 
-    Usage: `--allow-multiple-winners`
+      Usage: `--allow-multiple-winners`
 
-    ```js title="Example:"
+      ```js title="Example:"
 
-    [p]g start 1m 1 test giveaway --allow-multiple-winners
-    
-    [p]g start 1m 1 test giveaway --amw
-    
-    ```
+      [p]g start 1m 1 test giveaway --allow-multiple-winners
+      
+      [p]g start 1m 1 test giveaway --amw
+      
+      ```
 
-* ### `--channel`
+  * ### `--channel`
 
-    Alias: `--chan`
+      Alias: `--chan`
 
-    Purpose: This flag sets the channel the giveaway will be sent in.
+      Purpose: This flag sets the channel the giveaway will be sent in.
 
-    Usage: `--channel <channel>`
+      Usage: `--channel <channel>`
 
-    :::note
+      :::note
 
-    If not explicitly used, the bot will send the giveaway in the channel the command was used in.
+      If not explicitly used, the bot will send the giveaway in the channel the command was used in.
 
-    :::
+      :::
 
-    :::note
+      :::note
 
-    <channel> can be a channel mention, channel id, or channel name.
+      <channel> can be a channel mention, channel id, or channel name.
 
-    :::
-    
-    ```js title="Example:"
+      :::
+      
+      ```js title="Example:"
 
-    [p]g start 1m 1 test giveaway --channel #general
+      [p]g start 1m 1 test giveaway --channel #general
 
-    [p]g start 1m 1 test giveaway --channel 1234567890
+      [p]g start 1m 1 test giveaway --channel 1234567890
 
-    [p]g start 1m 1 test giveaway --channel general
+      [p]g start 1m 1 test giveaway --channel general
 
-    [p]g start 1m 1 test giveaway --chan #general
-    ```
+      [p]g start 1m 1 test giveaway --chan #general
+      ```
 
-* ### `--donor`
+  * ### `--donor`
 
-    Purpose: This flag sets a user as the donor for the giveaway.
+      Purpose: This flag sets a user as the donor for the giveaway.
 
-    Usage: `--donor <user>`
+      Usage: `--donor <user>`
 
-    :::note
+      :::note
 
-    <user> can be either a mention, an id, or simply a username
+      <user> can be either a mention, an id, or simply a username
 
-    :::
-    
-    ```js title="Example:"
+      :::
+      
+      ```js title="Example:"
 
-    [p]g start 1m 1 test giveaway --donor @User
+      [p]g start 1m 1 test giveaway --donor @User
 
-    [p]g start 1m 1 test giveaway --donor 1234567890
+      [p]g start 1m 1 test giveaway --donor 1234567890
 
-    [p]g start 1m 1 test giveaway --donor User#1234
-    
-    ```
+      [p]g start 1m 1 test giveaway --donor User#1234
+      
+      ```
 
-* ### `--ends-at`
+  * ### `--ends-at`
 
-    Alias: `--end-in` `--ends-in` `--end-at`
+      Alias: `--end-in` `--ends-in` `--end-at`
 
-    Purpose: This flag sets the time the giveaway will end.
+      Purpose: This flag sets the time the giveaway will end.
 
-    :::tip
+      :::tip
 
-    Use this flag if you want to set an accurate time for the giveaway to end.
+      Use this flag if you want to set an accurate time for the giveaway to end.
 
-    This flag accepts almost every date format you can give it.
+      This flag accepts almost every date format you can give it.
 
-    :::
+      :::
 
-    :::note
-    
-    If the <time> argument is not specified in the giveaway command, usage of this flag will be compulsory.
+      :::note
+      
+      If the <time> argument is not specified in the giveaway command, usage of this flag will be compulsory.
 
-    This flag holds precedence over the <time> argument.
+      This flag holds precedence over the <time> argument.
 
-    :::
+      :::
 
-    Usage: `--ends-at <time>`
-    
-    ```js title="Example:"
+      Usage: `--ends-at <time>`
+      
+      ```js title="Example:"
 
-    [p]g start 1 test giveaway --ends-at december 30 2022
+      [p]g start 1 test giveaway --ends-at december 30 2022
 
-    [p]g start 1 test giveaway --end-in 1 day
+      [p]g start 1 test giveaway --end-in 1 day
 
-    ```
+      ```
 
-* ### `--extra-multi`
+  * ### `--extra-multi`
 
-    Alias: `--em`
+      Alias: `--em`
 
-    Purpose: This flag sets role multipliers specific to the current giveaway.
+      Purpose: This flag sets role multipliers specific to the current giveaway.
 
-    :::note
+      :::note
 
-    Role multipliers act as an entry multiplier for users that joined the giveaway and have the specified role.
+      Role multipliers act as an entry multiplier for users that joined the giveaway and have the specified role.
 
-    Entries are added up for each role multiplier a user has.
+      Entries are added up for each role multiplier a user has.
 
-    :::
+      :::
 
-    Usage: `--extra-multi <role-multi-pairs>`
+      Usage: `--extra-multi <role-multi-pairs>`
 
-    :::note
+      :::note
 
-    `<role-multi-pairs>` is a space separated list of role names and multipliers.
+      `<role-multi-pairs>` is a space separated list of role names and multipliers.
 
-    The format to specify multipliers is: `<role>=<multi>`
+      The format to specify multipliers is: `<role>=<multi>`
 
-    where <role> can be a role mention, role id, or role name, and <multi> is a number.
-    
-    :::
-    
-    ```js title="Example:"
+      where <role> can be a role mention, role id, or role name, and <multi> is a number.
+      
+      :::
+      
+      ```js title="Example:"
 
-    [p]g start 1m 1 test giveaway --extra-multi @Role=2 @Role2=3
+      [p]g start 1m 1 test giveaway --extra-multi @Role=2 @Role2=3
 
-    [p]g start 1m 1 test giveaway --em 1234567890=2 Role-name=3
-    
-    ```
+      [p]g start 1m 1 test giveaway --em 1234567890=2 Role-name=3
+      
+      ```
 
-* ### `--message`
+  * ### `--message`
 
-    Alias: `--msg`
+      Alias: `--msg`
 
-    Purpose: This is a message that is sent alongside to the giveaway embed when a giveaway is started.
+      Purpose: This is a message that is sent alongside to the giveaway embed when a giveaway is started.
 
-    Usage: `--message <message>`
+      Usage: `--message <message>`
 
-    ```js title="Example:"
+      ```js title="Example:"
 
-    [p]g start 1m 1 test giveaway --message Join the giveaway by clicking on the emoji below the embed!
+      [p]g start 1m 1 test giveaway --message Join the giveaway by clicking on the emoji below the embed!
 
-    // or you can use the alias
-    [p]g start 1m 1 test giveaway --msg Join the giveaway by clicking on the emoji below the embed!
+      // or you can use the alias
+      [p]g start 1m 1 test giveaway --msg Join the giveaway by clicking on the emoji below the embed!
 
-    ```
+      ```
 
-* ### `--no-defaults`
+  * ### `--no-defaults`
 
-    Purpose: This flag disables the default role blacklists and bypass for the current giveaway.
-    
-    Usage: `--no-defaults`
-    
-    ```js title="Example:"
-    
-    [p]g start 1m 1 test giveaway --no-defaults
-    
-    ```
+      Purpose: This flag disables the default role blacklists and bypass for the current giveaway.
+      
+      Usage: `--no-defaults`
+      
+      ```js title="Example:"
+      
+      [p]g start 1m 1 test giveaway --no-defaults
+      
+      ```
 
-* ### `--no-donor`
+  * ### `--no-donor`
 
-    Purpose: This flag disables the donor from joining the current giveaway.
+      Purpose: This flag disables the donor from joining the current giveaway.
 
-    :::note
+      :::note
 
-    The donor defaults to the host of the giveaway if not provided using the [`--donor`](/docs/giveaways/flags#--donor) flag.
+      The donor defaults to the host of the giveaway if not provided using the [`--donor`](/docs/giveaways/flags#--donor) flag.
 
-    :::
-    
-    Usage: `--no-donor`
-    
-    ```js title="Example:"
-    
-    [p]g start 1m 1 test giveaway --no-donor
-    
-    ```
+      :::
+      
+      Usage: `--no-donor`
+      
+      ```js title="Example:"
+      
+      [p]g start 1m 1 test giveaway --no-donor
+      
+      ```
 
-* ### `--no-multi`
-    
-    Purpose: This flag disables the entry role multipliers for the current giveaway.
-    
-    Usage: `--no-multi`
-    
-    ```js title="Example:"
-    
-    [p]g start 1m 1 test giveaway --no-multi
-    
-    ```
+  * ### `--no-multi`
+      
+      Purpose: This flag disables the entry role multipliers for the current giveaway.
+      
+      Usage: `--no-multi`
+      
+      ```js title="Example:"
+      
+      [p]g start 1m 1 test giveaway --no-multi
+      
+      ```
 
-* ### `--starts-at`
+  * ### `--starts-at`
 
-    Alias: `--start-in` `--starts-in` `--start-at`
-    
-    Purpose: This flag sets the time the giveaway will start.
-    
-    :::tip
-    
-    Use this flag if you want to set an accurate time for the giveaway to start.
-    
-    This flag accepts almost every date format you can give it.
-    
-    :::
-    
-    Usage: `--starts-at <time>`
-    
-    ```js title="Example:"
-    
-    [p]g start 1m 1 test giveaway --starts-at december 30 2022
-    
-    [p]g start 1m 1 test giveaway --start-in 1 day
-    
-    ```
+      Alias: `--start-in` `--starts-in` `--start-at`
+      
+      Purpose: This flag sets the time the giveaway will start.
+      
+      :::tip
+      
+      Use this flag if you want to set an accurate time for the giveaway to start.
+      
+      This flag accepts almost every date format you can give it.
+      
+      :::
+      
+      Usage: `--starts-at <time>`
+      
+      ```js title="Example:"
+      
+      [p]g start 1m 1 test giveaway --starts-at december 30 2022
+      
+      [p]g start 1m 1 test giveaway --start-in 1 day
+      
+      ```
 
-* ### `--ping`
-    
-    Purpose: This flag will trigger the set pingrole to be pinged when a giveaway is started.
-    
-    Usage: `--ping`
-    
-    ```js title="Example:"
-    
-    [p]g start 1m 1 test giveaway --ping
-    
-    ```
+  * ### `--ping`
+      
+      Purpose: This flag will trigger the set pingrole to be pinged when a giveaway is started.
+      
+      Usage: `--ping`
+      
+      ```js title="Example:"
+      
+      [p]g start 1m 1 test giveaway --ping
+      
+      ```
 
-* ### `--thank`
+  * ### `--thank`
 
-    Purpose: This flag will send a thank you message alongside the giveaway message thanking the donor.
+      Purpose: This flag will send a thank you message alongside the giveaway message thanking the donor.
 
-    :::note
-    
-    This message is customizable as you want through the [`[p]gset tmsg`](/docs/giveaways/commands#pgset-tmsg) command.
+      :::note
+      
+      This message is customizable as you want through the [`[p]gset tmsg`](/docs/giveaways/commands#pgset-tmsg) command.
 
-    :::
-    
-    Usage: `--thank`
-    
-    ```js title="Example:"
-    
-    [p]g start 1m 1 test giveaway --thank
-    
-    ```
+      :::
+      
+      Usage: `--thank`
+      
+      ```js title="Example:"
+      
+      [p]g start 1m 1 test giveaway --thank
+      
+      ```
 
-## Special Flags
+* ### Special Flags
 
-* ### `--amount`
+  * ### `--amount`
 
-    Alias: `--amt`
+      Alias: `--amt`
 
-    Purpose: This flags adds the given amount to the donor's (or host's if donor is not specified) donation balance.
+      Purpose: This flags adds the given amount to the donor's (or host's if donor is not specified) donation balance.
 
-    :::tip
+      :::tip
 
-    This flag accepts most of the amount formats commonly used.
-    Such as exponents (1e3), decimals (1.5), and k-notation (2k).
-    
-    And also all shorthand amount units.
-    Such as million (1M) and billion (1B).
+      This flag accepts most of the amount formats commonly used.
+      Such as exponents (1e3), decimals (1.5), and k-notation (2k).
+      
+      And also all shorthand amount units.
+      Such as million (1M) and billion (1B).
 
-    These formats can be combined all together to create a larger amount.
+      These formats can be combined all together to create a larger amount.
 
-    :::
+      :::
 
-    :::note
+      :::note
 
-    This flag is only usable if the `DonationLogging` cog is loaded on the bot
+      This flag is only usable if the `DonationLogging` cog is loaded on the bot
 
-    :::
+      :::
 
-    Usage: `--amount <amount>`
-    
-    ```js title="Example:"
+      Usage: `--amount <amount>`
+      
+      ```js title="Example:"
 
-    [p]g start 1m 1 test giveaway --amount 1.5k
+      [p]g start 1m 1 test giveaway --amount 1.5k
 
-    [p]g start 1m 1 test giveaway --amount 5m
+      [p]g start 1m 1 test giveaway --amount 5m
 
-    [p]g start 1m 1 test giveaway --amount 1.5e3
+      [p]g start 1m 1 test giveaway --amount 1.5e3
 
-    [p]g start 1m 1 test giveaway --amt 1.5k
-    
-    ```
+      [p]g start 1m 1 test giveaway --amt 1.5k
+      
+      ```
 
-* ### `--bank`
+  * ### `--bank`
 
-    Purpose: This flag will set the bank to be used to add the amount set with [`--amount`](/docs/giveaways/flags#--amount).
+      Purpose: This flag will set the bank to be used to add the amount set with [`--amount`](/docs/giveaways/flags#--amount).
 
-    :::note
+      :::note
 
-    This flag is only usable if the `DonationLogging` cog is loaded on the bot and is to be used in conjunction with the [`--amount`](/docs/giveaways/flags#--amount) flag.
+      This flag is only usable if the `DonationLogging` cog is loaded on the bot and is to be used in conjunction with the [`--amount`](/docs/giveaways/flags#--amount) flag.
 
-    If this flag is not used, the default bank will be used.
+      If this flag is not used, the default bank will be used.
 
-    :::
+      :::
 
-    Usage: `--bank <bank>`
-    
-    ```js title="Example:"
+      Usage: `--bank <bank>`
+      
+      ```js title="Example:"
 
-    [p]g start 1m 1 test giveaway --bank bank-name
-    
-    ```
+      [p]g start 1m 1 test giveaway --bank bank-name
+      
+      ```
 
-* ### `--messages`
+  * ### `--messages`
 
-    Aliases: `--msgs` `--msg-req` `--msg-count`
+      Aliases: `--msgs` `--msg-req` `--msg-count`
 
-    Purpose: This flag sets the number of messages required to join the giveaway.
+      Purpose: This flag sets the number of messages required to join the giveaway.
 
-    :::tip
+      :::tip
 
-    This flag can be used as an alternative to providing this requirement in the `[requirements]` argument of the [`[p]g start`](/docs/giveaways/giveaway#pg-start) command.
+      This flag can be used as an alternative to providing this requirement in the `[requirements]` argument of the [`[p]g start`](/docs/giveaways/giveaway#pg-start) command.
 
-    :::
+      :::
 
-    Usage: `--messages <amount>`
-    
-    ```js title="Example:"
+      Usage: `--messages <amount>`
+      
+      ```js title="Example:"
 
-    [p]g start 1m 1 test giveaway --messages 10
+      [p]g start 1m 1 test giveaway --messages 10
 
-    [p]g start 1m 1 test giveaway --msgs 10
-    
-    ```
+      [p]g start 1m 1 test giveaway --msgs 10
+      
+      ```
 
-* ### `--message-channel`
+  * ### `--message-channel`
 
-    Aliases: `--message-channels` `--msg-chans` `--msg-channel` `--msg-chan` `--msg-ch`
+      Aliases: `--message-channels` `--msg-chans` `--msg-channel` `--msg-chan` `--msg-ch`
 
-    Purpose: This flag sets the channels in which the messages requirement will be checked.
+      Purpose: This flag sets the channels in which the messages requirement will be checked.
 
-    :::tip
+      :::tip
 
-    Use this flag if you want to limit which channel the messages requirement will be checked in.
+      Use this flag if you want to limit which channel the messages requirement will be checked in.
 
-    You can specify multiple channel by splitting them with a space.
+      You can specify multiple channel by splitting them with a space.
 
-    :::
+      :::
 
-    :::note
+      :::note
 
-    If this flag is not used, the message requirement will be valid in all channels.
+      If this flag is not used, the message requirement will be valid in all channels.
 
-    :::
+      :::
 
-    Usage: `--message-channel <channel>`
-    
-    :::note
+      Usage: `--message-channel <channel>`
+      
+      :::note
 
-    <channel> can be multiple channel IDs, channel names, or channel mentions split by a space.
-    
-    :::
+      <channel> can be multiple channel IDs, channel names, or channel mentions split by a space.
+      
+      :::
 
-    ```js title="Example:"
+      ```js title="Example:"
 
-    [p]g start 1m 1 test giveaway --message-channel #general #bot-testing
+      [p]g start 1m 1 test giveaway --message-channel #general #bot-testing
 
-    [p]g start 1m 1 test giveaway --msg-chans #general #bot-testing
+      [p]g start 1m 1 test giveaway --msg-chans #general #bot-testing
 
-    [p]g start 1m 1 test giveaway --msg-chan 1234567890 0987654321
+      [p]g start 1m 1 test giveaway --msg-chan 1234567890 0987654321
 
-    ```
+      ```
 
-* ### `--cooldown`
+  * ### `--cooldown`
 
-    Alias: `--cd`
+      Alias: `--cd`
 
-    Purpose: This flag sets the cooldown for the giveaway's message requirements.
+      Purpose: This flag sets the cooldown for the giveaway's message requirements.
 
-    :::note
+      :::note
 
-    This flag basically just adds delay between the emssage count for a user. 
-    Meaning this will prevent messages being counted if they spam messages.
+      This flag basically just adds delay between the emssage count for a user. 
+      Meaning this will prevent messages being counted if they spam messages.
 
-    :::
+      :::
 
-    Usage: `--cooldown <time in seconds>`
-    
-    ```js title="Example:"
+      Usage: `--cooldown <time in seconds>`
+      
+      ```js title="Example:"
 
-    [p]g start 1m 1 test giveaway --cooldown 10
+      [p]g start 1m 1 test giveaway --cooldown 10
 
-    [p]g start 1m 1 test giveaway --cd 10
-    
-    ```
+      [p]g start 1m 1 test giveaway --cd 10
+      
+      ```
 
 Here's a few simple examples of a giveaway using multiple flags in a single giveaway:
 
