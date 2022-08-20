@@ -66,7 +66,7 @@ Flags are provided after the title for the giveaway in the [`[p]g start`](/docs/
 
       :::note
 
-      <channel> can be a channel mention, channel id, or channel name.
+      `<channel>` can be a channel mention, channel id, or channel name.
 
       :::
       
@@ -89,7 +89,7 @@ Flags are provided after the title for the giveaway in the [`[p]g start`](/docs/
 
       :::note
 
-      <user> can be either a mention, an id, or simply a username
+      `<user>` can be either a mention, an id, or simply a username
 
       :::
       
@@ -119,9 +119,9 @@ Flags are provided after the title for the giveaway in the [`[p]g start`](/docs/
 
       :::note
       
-      If the <time> argument is not specified in the giveaway command, usage of this flag will be compulsory.
+      If the `<time>` argument is not specified in the giveaway command, usage of this flag will be compulsory.
 
-      This flag holds precedence over the <time> argument.
+      This flag holds precedence over the `<time>` argument.
 
       :::
 
@@ -157,7 +157,7 @@ Flags are provided after the title for the giveaway in the [`[p]g start`](/docs/
 
       The format to specify multipliers is: `<role>=<multi>`
 
-      where <role> can be a role mention, role id, or role name, and <multi> is a number.
+      where `<role>` can be a role mention, role id, or role name, and `<multi>` is a number.
       
       :::
       
@@ -388,7 +388,7 @@ Flags are provided after the title for the giveaway in the [`[p]g start`](/docs/
       
       :::note
 
-      <channel> can be multiple channel IDs, channel names, or channel mentions split by a space.
+      `<channel>` can be multiple channel IDs, channel names, or channel mentions split by a space.
       
       :::
 
