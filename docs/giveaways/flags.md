@@ -1,6 +1,6 @@
 ---
 title: Giveaway Flags
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 This page explains how to use the extra argument flags in giveaways to make them more customizable.
