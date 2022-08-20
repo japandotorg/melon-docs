@@ -270,7 +270,7 @@ Flags are provided after the title for the giveaway in the [`[p]g start`](/docs/
 
       :::note
       
-      This message is customizable as you want through the [`[p]gset tmsg`](/docs/giveaways/commands#pgset-tmsg) command.
+      This message is customizable as you want through the [`[p]gset tmsg`](/docs/giveaways/settings#pgset-tmsg) command.
 
       :::
       
