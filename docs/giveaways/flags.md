@@ -21,9 +21,9 @@ Some flags can have aliases to them that can be used alternatively to the origin
 
 Flags are provided after the title for the giveaway in the [`[p]g start`](/docs/giveaways/giveaway#pg-start) command.
 
-# Flag names, usage and effect
+## Flag names, usage and effect
 
-## Regular Flags
+### Regular Flags
 
 * ### `--allow-multiple-winners`
 
