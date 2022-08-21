@@ -9,12 +9,13 @@
     },
     "repository": "/melondocs",
     "scripts": {
-        "dev": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress dev src",
-        "build": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress build src"
+        "dev": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress dev src --temp .temp",
+        "build": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress build src --temp .temp"
     },
     "license": "MIT",
     "devDependencies": {
         "vue-toasted": "1.1.25",
-        "vuepress": "1.9.7"
+        "vuepress": "1.9.7",
+        "vuepress-theme-vt": "0.5.0"
     }
 }
