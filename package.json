@@ -1,0 +1,17 @@
+{
+    "name": "melondocs",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/japandotorg/melon-docs",
+    "author": "Lemon Rose <yash.kul69@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "dev": "vitepress dev docs",
+        "build": "vitepress build docs",
+        "serve": "vitepress serve docs"
+    },
+    "devDependencies": {
+        "vitepress": "^1.0.0-alpha.9",
+        "vue": "^3.2.37"
+    }
+}
