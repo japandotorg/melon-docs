@@ -15,7 +15,8 @@
     "license": "MIT",
     "devDependencies": {
         "vue-toasted": "1.1.25",
-        "vuepress": "1.9.7",
+        "vuepress": "^1.9.7",
+        "vuepress-plugin-container": "^2.1.5",
         "vuepress-theme-vt": "0.5.0"
     }
 }

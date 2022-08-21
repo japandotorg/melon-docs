@@ -2,9 +2,9 @@
 home: true
 title: MELON
 actionText: Getting Started
-actionLink: /guide/
-subActionText: Install
-subActionLink: /guide/getting-started.html
+actionLink: /custom-commands/
+subActionText: Support
+subActionLink: https://discord.gg/AyMrA7KMSp
 features:
   - title: Giveaways
     details: Melon comes with a powerful giveaways system with alot of customisable features.
