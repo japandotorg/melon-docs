@@ -7,7 +7,7 @@
     "name": "Lemon Rose",
     "email": "support@melonbot.io"
   },
-  "repository": "https://github.com/japandotorg/melon-docs/melondocs",
+  "repository": "https://github.com/japandotorg/melon-docs",
   "scripts": {
     "dev": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress dev src",
     "build": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress build src"
