@@ -28,7 +28,7 @@ export default defineConfig({
     plugins: [
         Components({
             dirs: [
-                // ".vitepress/theme/components"
+                ".vitepress/theme/components",
                 `${themeRoot}/components}`,
             ],
             extensions: [
