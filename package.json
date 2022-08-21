@@ -1,19 +1,20 @@
 {
-  "name": "melondocs",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
-  "authors": {
-    "name": "",
-    "email": ""
-  },
-  "repository": "/melondocs",
-  "scripts": {
-    "dev": "vuepress dev src",
-    "build": "vuepress build src"
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "vuepress": "^1.5.3"
-  }
+    "name": "melondocs",
+    "version": "0.0.1",
+    "description": "",
+    "main": "index.js",
+    "authors": {
+        "name": "",
+        "email": ""
+    },
+    "repository": "/melondocs",
+    "scripts": {
+        "dev": "vuepress dev src",
+        "build": "vuepress build src"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "vue-toasted": "1.1.25",
+        "vuepress": "1.9.7"
+    }
 }
