@@ -11,6 +11,7 @@
         "serve": "vitepress serve docs"
     },
     "devDependencies": {
+        "typescript": "^4.7.4",
         "vitepress": "^1.0.0-alpha.9",
         "vue": "^3.2.37"
     }
