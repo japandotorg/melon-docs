@@ -28,12 +28,12 @@ const config = {
         },
       }),
     ],
-    [
-      '@docusaurus/preset-classic',
-      {
-        debug: true,
-      },
-    ],
+    //[
+    //  '@docusaurus/preset-classic',
+    //  {
+    //    debug: true,
+    //  },
+    //],
   ],
 
   plugins: [require.resolve('docusaurus-lunr-search')],
