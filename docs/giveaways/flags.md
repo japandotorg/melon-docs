@@ -31,8 +31,8 @@ Flags are provided after the title for the giveaway in the [`[p]g start`](/docs/
 
 	Purpose: This flag toggles the option for a user to be chosen multiple times as the winner for the same giveaway.
 
-    > **__NOTE__:** If not explicitly used, the bot will try to select different users to be the winners for the giveaway to satisfy the amount of winners specified.
-    If it fails to do so (AKA there weren't enough entrants), all entrants would be considered as winners.
+        > **__NOTE__:** If not explicitly used, the bot will try to select different users to be the winners for the giveaway to satisfy the amount of winners specified.
+        If it fails to do so (AKA there weren't enough entrants), all entrants would be considered as winners.
 
 	Usage: `--allow-multiple-winners`
 
@@ -117,6 +117,10 @@ Flags are provided after the title for the giveaway in the [`[p]g start`](/docs/
 	If the `<time>` argument is not specified in the giveaway command, usage of this flag will be compulsory.
 
 	This flag holds precedence over the `<time>` argument.
+
+        You can also optionally provide a timezone in the given date/time.
+        
+        If there is no timezone provided, it defaults to UTC. 
 
 	:::
 
