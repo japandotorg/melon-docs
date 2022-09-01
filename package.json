@@ -1,0 +1,21 @@
+{
+  "name": "vitepress-melon",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/markdown-it": "^12.2.3",
+    "@types/node": "^18.7.14",
+    "@vue/repl": "^1.3.0",
+    "@vue/theme": "^1.2.2",
+    "terser": "^5.15.0",
+    "vitepress": "^1.0.0-alpha.13",
+    "vue": "^3.2.38"
+  },
+  "scripts": {
+    "dev": "vitepress",
+    "build": "vitepress build",
+    "serve": "vitepress serve"
+  },
+  "author": "Lemon Rose <@inthedark.org#0666> [japandotorg.pm.me]"
+}
