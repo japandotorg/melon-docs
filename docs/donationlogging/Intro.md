@@ -26,4 +26,4 @@ Namely:
 
 All of the above will be explained in details in the next sections.
 
-This cog only has two top-level commands: [`dono`](/docs/donationlogging/dono.md) and [`donoset`](/docs/donationlogging/donoset.md), with a ton of sub commands for extreme customizability.
+This cog only has two top-level commands: [`dono`](/docs/donationlogging/dono) and [`donoset`](/docs/donationlogging/donoset), with a ton of sub commands for extreme customizability.
