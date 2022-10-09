@@ -3,7 +3,7 @@ title: Getting Started
 sidebar_position: 2
 ---
 
-So you awnt to host giveaways in your server ehh? Well, you're in the right place!
+So you want to host giveaways in your server ehh? Well, you're in the right place!
 
 This small but descriptive guide will help you on your way to hosting giveaways in your server.
 
@@ -11,7 +11,7 @@ This small but descriptive guide will help you on your way to hosting giveaways 
 
 Let's start with what a giveaway is first. A giveaway is a small competition type event where you give away something to a random winner. It can be anything from a role to a custom emoji to a custom role color. The possibilities are endless!
 
-In discord's terms thought, giveaways are hosted in a lottery style. You can use a bot for this or do it yourself.
+In discord's terms though, giveaways are hosted in a lottery style. You can use a bot for this or do it yourself.
 Using a bot is the easiest way to host giveaways and is the recommended way to do it.
 
 You use the giveaway command on a bot and the bot posts and embed explaining the details of the giveaway. Users then have to *react* to a given emoji on the message and they get entered. After the tme ends, the bot posts the winners of the giveaway chosen at random.
