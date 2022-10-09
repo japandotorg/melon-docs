@@ -104,7 +104,7 @@ This guide is categorized alphabetically however the first command mentioned is 
     
         This command is used to check the amount of donations you have made.
         You cannot check the amount of donations made by other users with this command.
-        For that, use the [`dono check`](/docs/donationlogging/dono.md#p-dono-check) command.
+        For that, use the [`dono check`](/docs/donationlogging/dono#p-dono-check) command.
 
         Omitting the bank argument will show the total amount of donations in all banks made by you.
     
