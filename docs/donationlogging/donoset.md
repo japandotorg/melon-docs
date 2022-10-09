@@ -41,7 +41,7 @@ This command is used to manage the settings of the donation logging system.
     
     * #### Usage
     
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `donoset` is the name of the command.
         * `autorole` is the subcommand of the command.
         * `add` is the subcommand of the command.
@@ -70,7 +70,7 @@ This command is used to manage the settings of the donation logging system.
 
     * #### Usage
 
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `donoset` is the name of the command.
         * `autorole` is the subcommand of the command.
         * `remove` is the subcommand of the command.
@@ -103,7 +103,7 @@ This command is used to manage the settings of the donation logging system.
 
     * #### Usage
 
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `donoset` is the name of the command.
         * `backup` is the subcommand of the command.
 
@@ -125,7 +125,7 @@ This command is used to manage the settings of the donation logging system.
 
     * #### Usage
 
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `donoset` is the name of the command.
         * `bank` is the subcommand of the command.
 
@@ -156,7 +156,7 @@ This command is used to manage the settings of the donation logging system.
 
     * #### Usage
 
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `donoset` is the name of the command.
         * `bank` is the subcommand of the command.
         * `add` is the subcommand of the command.
@@ -184,7 +184,7 @@ This command is used to manage the settings of the donation logging system.
 
     * #### Usage
 
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `donoset` is the name of the command.
         * `bank` is the subcommand of the command.
         * `default` is the subcommand of the command.
@@ -211,7 +211,7 @@ This command is used to manage the settings of the donation logging system.
 
     * #### Usage
 
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `donoset` is the name of the command.
         * `bank` is the subcommand of the command.
         * `emoji` is the subcommand of the command.
@@ -241,7 +241,7 @@ This command is used to manage the settings of the donation logging system.
 
     * #### Usage
 
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `donoset` is the name of the command.
         * `bank` is the subcommand of the command.
         * `hide` is the subcommand of the command.
@@ -270,7 +270,7 @@ This command is used to manage the settings of the donation logging system.
 
     * #### Usage
 
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `donoset` is the name of the command.
         * `bank` is the subcommand of the command.
         * `info` is the subcommand of the command.
@@ -297,7 +297,7 @@ This command is used to manage the settings of the donation logging system.
 
     * #### Usage
 
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `donoset` is the name of the command.
         * `bank` is the subcommand of the command.
         * `item` is the subcommand of the command.
@@ -322,7 +322,7 @@ This command is used to manage the settings of the donation logging system.
 
     * #### Usage
 
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `donoset` is the name of the command.
         * `bank` is the subcommand of the command.
         * `item` is the subcommand of the command.
@@ -351,7 +351,7 @@ This command is used to manage the settings of the donation logging system.
 
     * #### Usage
 
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `donoset` is the name of the command.
         * `bank` is the subcommand of the command.
         * `item` is the subcommand of the command.
@@ -380,7 +380,7 @@ This command is used to manage the settings of the donation logging system.
 
     * #### Usage
 
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `donoset` is the name of the command.
         * `bank` is the subcommand of the command.
         * `item` is the subcommand of the command.
@@ -408,7 +408,7 @@ This command is used to manage the settings of the donation logging system.
 
     * #### Usage
 
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `donoset` is the name of the command.
         * `bank` is the subcommand of the command.
         * `list` is the subcommand of the command.
@@ -433,7 +433,7 @@ This command is used to manage the settings of the donation logging system.
 
     * #### Usage
 
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `donoset` is the name of the command.
         * `bank` is the subcommand of the command.
         * `log` is the subcommand of the command.
@@ -465,7 +465,7 @@ This command is used to manage the settings of the donation logging system.
 
     * #### Usage
 
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `donoset` is the name of the command.
         * `bank` is the subcommand of the command.
         * `remove` is the subcommand of the command.
@@ -496,7 +496,7 @@ This command is used to manage the settings of the donation logging system.
 
     * #### Usage
 
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `donoset` is the name of the command.
         * `bank` is the subcommand of the command.
         * `reset` is the subcommand of the command.
@@ -523,7 +523,7 @@ This command is used to manage the settings of the donation logging system.
 
     * #### Usage
 
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `donoset` is the name of the command.
         * `bank` is the subcommand of the command.
         * `roles` is the subcommand of the command.
@@ -548,7 +548,7 @@ This command is used to manage the settings of the donation logging system.
 
     * #### Usage
 
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `donoset` is the name of the command.
         * `bank` is the subcommand of the command.
         * `roles` is the subcommand of the command.
@@ -576,7 +576,7 @@ This command is used to manage the settings of the donation logging system.
 
         This command lists the roles in a bank in the donation logging system.
 
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `donoset` is the name of the command.
         * `bank` is the subcommand of the command.
         * `roles` is the subcommand of the command.
@@ -606,7 +606,7 @@ This command is used to manage the settings of the donation logging system.
 
     * #### Usage
 
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `donoset` is the name of the command.
         * `bank` is the subcommand of the command.
         * `roles` is the subcommand of the command.
@@ -638,7 +638,7 @@ This command is used to manage the settings of the donation logging system.
 
     * #### Usage
 
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `donoset` is the name of the command.
         * `bank` is the subcommand of the command.
         * `unhide` is the subcommand of the command.
@@ -667,7 +667,7 @@ This command is used to manage the settings of the donation logging system.
 
     * #### Usage
 
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `donoset` is the name of the command.
         * `managers` is the subcommand of the command.
 
@@ -692,7 +692,7 @@ This command is used to manage the settings of the donation logging system.
 
     * #### Usage
 
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `donoset` is the name of the command.
         * `managers` is the subcommand of the command.
         * `add` is the subcommand of the command.
@@ -723,7 +723,7 @@ This command is used to manage the settings of the donation logging system.
 
     * #### Usage
 
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `donoset` is the name of the command.
         * `managers` is the subcommand of the command.
         * `remove` is the subcommand of the command.
@@ -754,7 +754,7 @@ This command is used to manage the settings of the donation logging system.
 
     * #### Usage
 
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `donoset` is the name of the command.
         * `reset` is the subcommand of the command.
 
@@ -776,7 +776,7 @@ This command is used to manage the settings of the donation logging system.
 
     * #### Usage
 
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `donoset` is the name of the command.
         * `restore` is the subcommand of the command.
 
@@ -809,7 +809,7 @@ This command is used to manage the settings of the donation logging system.
 
     * #### Usage
 
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `donoset` is the name of the command.
         * `showsettings` is the subcommand of the command.
 

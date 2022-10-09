@@ -31,7 +31,7 @@ This guide is categorized alphabetically however the first command mentioned is 
     
     * #### Usage
     
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `dono` is the name of the command.
         * `setup` is the subcommand of the command.
     
@@ -47,7 +47,7 @@ This guide is categorized alphabetically however the first command mentioned is 
     
     * #### Usage
     
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `dono` is the name of the command.
         * `add` is the subcommand of the command.
     
@@ -77,7 +77,7 @@ This guide is categorized alphabetically however the first command mentioned is 
     
     * #### Usage
     
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `dono` is the name of the command.
         * `amountcheck` is the subcommand of the command.
     
@@ -110,7 +110,7 @@ This guide is categorized alphabetically however the first command mentioned is 
     
     * #### Usage
     
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `dono` is the name of the command.
         * `bal` is the subcommand of the command.
     
@@ -142,7 +142,7 @@ This guide is categorized alphabetically however the first command mentioned is 
     
     * #### Usage
     
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `dono` is the name of the command.
         * `check` is the subcommand of the command.
     
@@ -169,7 +169,7 @@ This guide is categorized alphabetically however the first command mentioned is 
     
     * #### Usage
     
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `dono` is the name of the command.
         * `leaderboard` is the subcommand of the command.
     
@@ -197,7 +197,7 @@ This guide is categorized alphabetically however the first command mentioned is 
     
     * #### Usage
     
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `dono` is the name of the command.
         * `leaderboard` is the subcommand of the command.
         * `today` is the subcommand of the subcommand.
@@ -226,7 +226,7 @@ This guide is categorized alphabetically however the first command mentioned is 
     
     * #### Usage
     
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `dono` is the name of the command.
         * `leaderboard` is the subcommand of the command.
         * `weekly` is the subcommand of the subcommand.
@@ -253,7 +253,7 @@ This guide is categorized alphabetically however the first command mentioned is 
     
     * #### Usage
     
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `dono` is the name of the command.
         * `notes` is the subcommand of the command.
     
@@ -279,7 +279,7 @@ This guide is categorized alphabetically however the first command mentioned is 
     
     * #### Usage
     
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `dono` is the name of the command.
         * `remove` is the subcommand of the command.
     
@@ -311,7 +311,7 @@ This guide is categorized alphabetically however the first command mentioned is 
     
     * #### Usage
     
-        * `p` is the prefix of the bot.
+        * `[p]` is the prefix of the bot.
         * `dono` is the name of the command.
         * `reset` is the subcommand of the command.
     
