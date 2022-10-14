@@ -1,6 +1,6 @@
 ---
 title: Giveaway
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 This page shows the usage of melon's giveaways system.

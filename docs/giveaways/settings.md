@@ -1,6 +1,6 @@
 ---
 title: Giveaway Settings
-sidebar_position: 2
+sidebar_position: 4
 ---
 
 This page shows the usage of configuration of the giveaways system commands.

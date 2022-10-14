@@ -1,6 +1,6 @@
 ---
 title: Giveaway Requirements
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 Melon's Giveaways come with an extensible requirements system that allows you to set certain restrictions to who can join a giveaway.
