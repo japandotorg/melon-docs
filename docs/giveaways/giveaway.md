@@ -35,6 +35,27 @@ I.E the end message, and dms are not processed. The giveaway message is deleted 
 
 This asks you different questions one by one to start a giveaway. ( For Beginners )
 
+* ### `[p]g eligible`
+
+A simple command to check if you are eligible for a giveaway or not.
+
+If you aren't eligible the command will reply with the reason why you aren't eligible.
+
+:::tip
+
+You can also reply to a giveaway message instead of passing it's id
+
+:::
+
+**Syntax:** `[p]g eligible [message_id]`
+
+```js title="Example:"
+[p]g eligible 12345678901234567890
+
+// or if you want to reply to a message
+[p]g eligible x
+```
+
 * ### `[p]g end`
 
 End a giveaway prematurely.
@@ -59,9 +80,6 @@ Pass `all` to the message parameter to end all active giveaways in your server.
 // or if you want to reply to a message
 [p]g end x
 ```
-
-
-
 
 
 * ### `[p]g entrants`
