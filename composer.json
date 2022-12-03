@@ -1,0 +1,10 @@
+{
+    "name": "melon/melon-docs",
+    "description": "The documentation site for melon discord bot.",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.1",
+        "robmorgan/phinx": "^5.4"
+    }
+}
