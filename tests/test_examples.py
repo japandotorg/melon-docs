@@ -93,3 +93,4 @@ for example, expected in examples:
         print(
             Fore.GREEN + "PASS" + Style.RESET_ALL
         )
+        
