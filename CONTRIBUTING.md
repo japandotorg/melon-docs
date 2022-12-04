@@ -25,11 +25,11 @@ HTTPS=true SSL_CRT_FILE=localhost.pem SSL_KEY_FILE=localhost-key.pem yarn start
 ```
 4. Open `https://localhost:3000/`
 
-> *Remember to git ignore any unnecessery file like `localhost.pem` or anything similar if it's not already ignored.
+> *Remember to git ignore any unnecessery file like `localhost.pem` or anything similar if it's not already ignored.*
 
 ## Adding pages
 
-To add a new page to the guide, create a `file-name.md` or `file-name.mdx` file inside th folder of your choice inside the [docs sub-folder](https://github.com/japandotorg/melon-docs/tree/dev/docs). If you wan to link to `/docs/some-folder/some-file.html`, you would create a `some-file.md` or `some-file.mdx` file inside the folder. [React](https://reactjs.org) will/should automatically pick up on it and set up the routing appropriately.
+To add a new page to the guide, create a `file-name.md` or `file-name.mdx` file inside th folder of your choice inside the [docs sub-folder](https://github.com/japandotorg/melon-docs/tree/dev/docs). If you want to link to `/docs/some-folder/some-file.html`, you would create a `some-file.md` or `some-file.mdx` file inside the folder. [React](https://reactjs.org) will/should automatically pick up on it and set up the routing appropriately.
 
 ## General guidelines
 
