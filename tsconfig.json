@@ -1,0 +1,19 @@
+{
+    "extends": "@melon-docs",
+    "compilerOptions": {
+        "outDir": "dist",
+    },
+    "exclude": [
+        "node_modules/",
+        "dist/",
+        "docs/",
+        "build/",
+        "migrations/",
+        "scripts/",
+        "src/",
+        "static/"
+    ],
+    "include": [
+        "integrations/*.ts",
+    ]
+}
