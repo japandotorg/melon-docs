@@ -1,0 +1,41 @@
+---
+title: Sticky
+sidebar_position: 2
+---
+
+Sticky messages to your channels.
+​
+#### Syntax
+```
+[p]sticky toggleheader <true_or_false`
+```
+#### Description
+**Toggle the header for stickied messages in this channel.**
+The header is enabled by default.
+
+#### Syntax
+```
+[p]sticky existing <message_id_or_url>
+```
+#### Description
+Sticky an existing message to this channel.
+This will try to sticky the content and embed of the message.
+Attachments will not be added to the stickied message.
+
+Stickying messages with multiple embeds may result in unexpected
+behaviour, as the bot cannot send multiple rich embeds in a
+single message.
+
+#### Syntax
+```
+[p]unsticky [force=False]
+```
+#### Description
+Remove the sticky message from this channel.
+Deleting the sticky message will also unsticky it.
+
+:::note 
+
+Do `unsticky yes` to skip the confirmation prompt.
+
+:::
