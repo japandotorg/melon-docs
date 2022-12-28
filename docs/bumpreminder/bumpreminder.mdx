@@ -1,0 +1,101 @@
+---
+title: BumpReminder
+sidebar_position: 1
+---
+
+### Set a reminder to bump on Disboard.
+This sends a reminder to bump in a specified channel 2 hours after someone successfully bumps, thus making it more accurate than a repeating schedule.
+
+
+#### Syntax
+```
+[p]bumpreminder channel [channel]
+```
+#### Description
+Set the channel to send bump reminders to.
+
+:::note
+
+This also works as a toggle, so if no channel is provided, it will disable reminders for this server.
+
+:::
+
+#### Syntax
+```
+[p]bumpreminder message [message]
+```
+#### Description
+Change the message used for reminders. 
+
+:::note
+
+Providing no message will reset to the default message.
+
+:::
+
+#### Syntax
+```
+[p]bumpreminder clean [true_or_false]
+```
+#### Description
+Toggle whether MELON should keep the bump channel "clean."
+
+:::note
+
+MELON will remove all failed invoke messages by Disboard.
+
+:::
+
+#### Syntax
+```
+[p]bumpreminder lock [true_or_false]
+```
+#### Description
+Toggle whether the bot should automatically lock/unlock the bump channel.
+
+:::
+
+#### Syntax
+```
+[p]bumpreminder pingrole [role]
+```
+#### Description
+Set a role to ping for bump reminders.
+
+:::note
+
+If no role is provided, it will clear the current role.
+
+:::
+
+#### Syntax
+```
+[p]bumpreminder thankyou [message]
+```
+#### Description
+Change the message used for 'Thank You' messages. 
+
+:::note
+
+Providing no message will reset to the default message.
+
+:::
+
+**Variables:**
+
+`{server}` - This server.
+
+`{member}` - the member who bumped.
+
+### Examples:
+```py
+,bprm ty Thanks {member} for bumping! You earned 10 brownie points from phen!
+,bprm ty {embed(description):{member(mention)}, thank you for bumping! Make sure to vote for **{server}** on [our voting page](https://disboard.org/server/{guild(id)}).}
+```
+
+#### Syntax
+```
+[p]bumpreminder settings 
+```
+#### Description
+Show your Bump Reminder settings.

@@ -1,6 +1,6 @@
 {
-    "label": "Defender",
-    "position": 5,
+    "label": "BumpReminder",
+    "position": 9,
     "link": {
         "type": "generated-index"
     }
