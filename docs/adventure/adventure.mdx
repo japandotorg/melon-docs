@@ -1,5 +1,5 @@
 ---
-title: Adventure
+title: Basic
 sidebar_position: 1
 ---
 
@@ -100,7 +100,7 @@ Preferred stat: INT
 ## More Advanced Commands for Players
 
 `[p]backpack disassemble`
-* Take apart an unused piece of gear to try to get something good out of it. This complex command also uses the same argparse-style command structure that `[p]cbackpack` does - I recommend reading https://github.com/aikaterna/gobcog/blob/master/docs/cbackpack.md for more information.
+* Take apart an unused piece of gear to try to get something good out of it. This complex command also uses the same argparse-style command structure that `[p]cbackpack` does. Reading [this](/docs/adventure/backpack) is recommended.
 
 
 ## Monsters, Adventures, and the Numbers
@@ -131,21 +131,22 @@ Set items have a stacking set bonus. For example, if one set has 9 pieces, and `
 ## Advanced Adventure for Admins/Bot Owners
 Read `[p]adventureset` and familiarize yourself with the subcommands available in that command. A few of the commands are highlighted below as they offer options that affect the whole game and also the bot itself.
 The bot owner can spawn specific adventure monsters that are in the theme list by using `[p]adventure` with the name of the monster.
-### Easy Mode vs Hard Mode
+
+### Easy Mode vs Hard Mode [Dev Only]
 `[p]adventureset easymode`
 * Users gain more XP per adventure if Hard Mode is used
 * Hard Mode randomly obscures details about the monster the group is fighting
 * The Psychic prestige heroclass is intended to be leveraged against Hard Mode by revealing critical details about how to defeat the monster
+
 ### Daily bonuses
 `[p]adventureset dailybonus`
 Certain days of the week receive certain bonuses for XP and gold which is configurable.
+
 ### Adventure Gold vs. Red Economy credits
 `[p]adventureset sepcurrency`
 Adventure gold is the default currency of adventure, which is separate from Red credits. This gold currency can provide an opportunity for users to have fun collecting it aside from Red credits in other games or cogs. Cogs can be written to leverage adventure gold, so there are infinite possibilities on how to best use this extra currency for your bot. If you want a unified currency, or if you aren't interested in another currency for your users, it can be toggled off.
 Adventure is a global (bot-wide) game in the idea that users use the same character across all servers the bot can see, but there are some things that provide different outcomes based on whether the bot is set to a global or server-based economy. For example with rebirth cost, if the Red bank/economy is in server-based mode, each server will be able to set their rebirth cost while if it is in global mode, only the bot owner will be able to use the command. In server-based mode, authorized users have either a bot Admin role (check `[p]set showsettings` to display Admin roles on Red), or they have the Manage Guild permission.
-### Make Your Own Adventure Theme
-`[p]adventureset theme`
-Copy the default folder in `<datapath>/cogs/CogManager/adventure/data/` to the cog's data directory in `<datapath>/cogs/Adventure/` and name it a one word folder name. Make your changes to the files while making sure to validate them with a site like <https://jsonformatter.curiousconcept.com/>. Load your new theme with `[p]adventureset theme <folder_name>`.
+
 ### The Trader Cart System
 `[p]adventureset cart <#channel>`
 Sometimes a traveling merchant cart will roll past offering new items for adventurers to buy or loot chests to purchase. Admins/Bot owners must set this cart channel first before carts will appear. Carts have roughly a 3h return time, but this is also configurable.
