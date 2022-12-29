@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## Basic Usage
 
-`[p]` in this readme represents your bot's command prefix. Whenever you see a command in this guide, you can receive more detailed help by using `[p]help` with the command name.
+`[p]` in this guide represents your bot's command prefix. Whenever you see a command in this guide, you can receive more detailed help by using `[p]help` with the command name.
 
 To start an adventure, use `[p]adventure` or `[p]a`. Reactions will appear underneath the text of the adventure randomly selected for your group. Use 🗡 to attack the monster, ✨ to use magic on the monster, 🗨 to talk with the monster, 🛐 to pray to the god Herbert (customizable). The more people helping the easier it is to defeat the monster and acquire its loot. 
 
@@ -132,7 +132,7 @@ Set items have a stacking set bonus. For example, if one set has 9 pieces, and `
 Read `[p]adventureset` and familiarize yourself with the subcommands available in that command. A few of the commands are highlighted below as they offer options that affect the whole game and also the bot itself.
 The bot owner can spawn specific adventure monsters that are in the theme list by using `[p]adventure` with the name of the monster.
 
-### Easy Mode vs Hard Mode [Dev Only]
+### Easy Mode vs Hard Mode
 `[p]adventureset easymode`
 * Users gain more XP per adventure if Hard Mode is used
 * Hard Mode randomly obscures details about the monster the group is fighting
@@ -142,7 +142,7 @@ The bot owner can spawn specific adventure monsters that are in the theme list b
 `[p]adventureset dailybonus`
 Certain days of the week receive certain bonuses for XP and gold which is configurable.
 
-### Adventure Gold vs. Red Economy credits
+### Adventure Gold vs. Economy credits
 `[p]adventureset sepcurrency`
 Adventure gold is the default currency of adventure, which is separate from Red credits. This gold currency can provide an opportunity for users to have fun collecting it aside from Red credits in other games or cogs. Cogs can be written to leverage adventure gold, so there are infinite possibilities on how to best use this extra currency for your bot. If you want a unified currency, or if you aren't interested in another currency for your users, it can be toggled off.
 Adventure is a global (bot-wide) game in the idea that users use the same character across all servers the bot can see, but there are some things that provide different outcomes based on whether the bot is set to a global or server-based economy. For example with rebirth cost, if the Red bank/economy is in server-based mode, each server will be able to set their rebirth cost while if it is in global mode, only the bot owner will be able to use the command. In server-based mode, authorized users have either a bot Admin role (check `[p]set showsettings` to display Admin roles on Red), or they have the Manage Guild permission.
