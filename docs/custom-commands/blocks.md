@@ -47,7 +47,7 @@ Parameter: seed, None
 # Lemon attempts to ban the user!
 # Unknown attempts to ban the user!
 # Clad attempts to ban the user!
-{=(insult):I’d like to kick you in the teeth, but why should I improve your looks?~Yo Mama so dumb she bought tickets to Xbox Live.~You look like a monkey, and you smell like one too.}
+{=(insults):I’d like to kick you in the teeth, but why should I improve your looks?~Yo Mama so dumb she bought tickets to Xbox Live.~You look like a monkey, and you smell like one too.}
 {=(insult):{rand:{insults}}}
 {insult}
 # Assigns a random insult to the insult variable
@@ -138,7 +138,7 @@ Parameter: expression
 ```py title="Examples:"
 {if({args}==69):You guessed it right, the number I was thinking of is 69|Too {if({args}<69):low|high}, try again}
 # if args is 69
-# You guessed it right, the number I was thinking of is 63
+# You guessed it right, the number I was thinking of is 69
 # if args is 21
 # Too low, try again
 # if args is 89
@@ -287,9 +287,9 @@ Parameter: "+", None
 
 ### Miscellaneous Blocks
 
-#### Striftime Block
+#### Strftime Block
 
-The strif block converts and formats timestamps based on [striftime formatting spec](https://strftime.org). Two types of timestamps are supported: ISO and epoch. If a timestamp isn't passed, the current UTC time is used.
+The strf block converts and formats timestamps based on [strftime formatting spec](https://strftime.org). Two types of timestamps are supported: ISO and epoch. If a timestamp isn't passed, the current UTC time is used.
 
 Invoking this block with `unix` will return the current Unix timestamp.
 
