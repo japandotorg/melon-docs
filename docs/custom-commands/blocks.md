@@ -11,7 +11,7 @@ TagScriptEngine Blocks usage and examples.
 
 ### Assignment Block 
 
-Variables are useful for choosing a value and referencing it later in a tag. Variables can be rederenced using brakcets as any other block.
+Variables are useful for choosing a value and referencing it later in a tag. Variables can be referenced using brackets as any other block.
 
 Usage: `{=(<name>):<value>}`
 
@@ -55,7 +55,7 @@ Parameter: seed, None
 
 ### Math Block
 
-Math blocks perfom the mathematical operations in the payload and return the results.
+Math blocks perform the mathematical operations in the payload and return the results.
 
 Aliases: `+, m, math, calc`
 
@@ -69,17 +69,17 @@ Variables:
 * `a^b` - exponent
 * `abs(x)` - absolute value of x
 * `round(x)` - rounds x to the nearest whole number
-* `trunc(x)` - truncates x to ineger value (chops off decimals)
+* `trunc(x)` - truncates x to integer value (chops off decimals)
 * `sin(x)` - returns the sine of x radians
 * `cos(x)` - returns the cosine of x radians
 * `tan(x)` - returns the tangent of x radians
-* `exp(x)` - returns euler's number raised to the power of x
+* `exp(x)` - returns Euler's number raised to the power of x
 * `sgn(x)` - returns the sign of x, for `x>0` returns 1, for `x=01` returns 0, for `x<0` returns -1.
 * `log(x)` - returns the logarithm of x (base 10)
-* `ln(x)` - returns the natural logaritm of x (base e)
+* `ln(x)` - returns the natural logarithm of x (base e)
 * `log2(x)` - returns the logarithm of x (base 2)
 * `pi` or `PI` can be used to indicate 𝜋 (3.141592653589793)
-* `e` or `E` can be used to indicate euler's number (2.718281828459045)
+* `e` or `E` can be used to indicate Euler's number (2.718281828459045)
 
 ```py title="Example:"
 {math:cos(pi)} 
@@ -123,13 +123,13 @@ Expression Operators:
 Operator | Check | Example | Description
 ---------|-------|---------|--------
 `==` | equality | a==a | value 1 is equal to value 2
-`!=` | inquality | a!=b | value 1 is not equal to value 2
+`!=` | inequality | a!=b | value 1 is not equal to value 2
 `>` | greater than | 9>6 | value 1 is greater than value 2
 `<` | less than | 6>9 | value 1 is less than value 2
 `>=` | greater than or equality | 10>=10 | value 1 is greater than or equal to value 2
-`<=` | less than or equality | 6<=9 | value 1 is less than ot equal to value 2
+`<=` | less than or equality | 6<=9 | value 1 is less than or equal to value 2
 
-Usage: `{if(<expression>):<message>]}`
+Usage: `{if(<expression>):<message>}`
 
 Payload: message
 
@@ -245,7 +245,7 @@ Parameter: bool
 
 #### Replace Block
 
-The replace block will replace specific characters in a string. The parameter should split by a `,`, containing the characters to fund before the command and the replacements after
+The replace block will replace specific characters in a string. The parameter should split by a `,`, containing the characters to find before the command and the replacements after.
 
 Usage: `{replace(<original,new>):<message>}`
 
@@ -266,7 +266,7 @@ Parameter: original, new
 ```
 #### URLEncode Block
 
-This block will encode a given string into a properly formatted url with non-url compliant characters replaced. Using `+` as the parameter will replace spaces with `+` rather than `%20`
+This block will encode a given string into a properly formatted url with non-url compliant characters replaced. Using `+` as the parameter will replace spaces with `+` rather than `%20`.
 
 Usage: `{urlencode(["+"]):<string>}`
 
@@ -275,7 +275,7 @@ Payload: string
 Parameter: "+", None
 
 ```py title="Example:"
-{urlencode"covid-19 sucks}
+{urlencode:covid-19 sucks}
 # covid-19%20sucks
 {urlencode(+):i am stuck at home writing docs}
 # i+am+stuck+at+home+writing+docs
@@ -305,7 +305,7 @@ Parameter: timestamp
 {strf:%Y-%m-%d}
 # 2021-07-11
 {strf({user(timestamp)}):%c}
-# Thrus Oct 7 21:10:28 2018
+# Thu Oct 7 21:10:28 2018
 {strf(1420070400):%A %d, %B %Y}
 # Thursday 01, January 2015
 {strf(2019-10-09T01:45:00.805000):%H:%M %d-%B-%Y}
