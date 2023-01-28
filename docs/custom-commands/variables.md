@@ -3,7 +3,7 @@ title: Default Variables
 sidebar_position: 3
 ---
 
-The following blocks will be present and accessable as defaults when running any tag.
+The following blocks will be present and accessible as defaults when running any tag.
 
 ## Meta Variables
 
@@ -13,7 +13,7 @@ Meta variables reference meta attributes about the tag invocation.
 
 The `{args}` block represents the arguments passed after the tag name when invoking a tag. If no parameter is passed, it returns all the text after the invocation name. If an index is passed, it will split the arguments into a list by the given splitter, and return the word at the index. The default splitter is a " ".
 
-**Usage:** `{args([index]):[splitter]>}`
+**Usage:** `{args([index]):[splitter]}`
 
 **Payload:** splitter
 
@@ -77,15 +77,15 @@ discriminator | Author's discriminator
 created_at | Author's account creation date
 timestamp | Author's account creating date as a UTC timestamp
 joined_at | Date author joined the server
-mention | Author's ping mention
-bot | Whethor author is a bot or not
+mention | Author's ping/mention
+bot | Whether author is a bot or not
 color | Author's top role's hex color
 top_role | Author's top role
 roleids | List of author's role IDs
 
 ### Target Block
 
-The `{target}` block follows the same usage and has the same attributes as the Author Block, but it's deaults to the mentioned, or the tag author.
+The `{target}` block follows the same usage and has the same attributes as the Author Block, but it's defaults to the mentioned, or the tag author.
 
 **Usage:** `{target}`
 
@@ -107,7 +107,7 @@ id | Channel's ID
 name | Channel's name
 created_at | Channel's creation date
 timestamp | Channel's creation date as a UTC timestamp
-nsfw | Weather the channel is nsfw or not
+nsfw | Whether the channel is nsfw or not
 mention | Channel's ping mention
 topic | Channel's topic
 
@@ -130,5 +130,5 @@ created_at | Server's creation date
 timestamp | Server's creation date as UTC timestamp
 member_count | Server's member count
 bots | Number of bots in the server
-humans | Number of huamns in the server
+humans | Number of humans in the server
 random | A random member from the server

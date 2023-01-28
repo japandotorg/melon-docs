@@ -13,7 +13,7 @@ Slash Tags allow you to create custom [Discord Slash Commands](https://blog.disc
 
 :::
 
-Add a tag using the folling command:
+Add a tag using the following command:
 
 ```py
 [p]slashtag add mytag Hi This is my first tag!

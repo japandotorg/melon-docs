@@ -40,7 +40,7 @@ Topic: {channel(topic)}
 This simple tag shows how to store repeated/informational text. This tag has often been used in a support server
 
 ```rs
-[p] tag + ss Please send a screenshot. It’s much easier to figure out your problem if we can see what went wrong.
+[p]tag + ss Please send a screenshot. It’s much easier to figure out your problem if we can see what went wrong.
 ```
 
 ## Information Storage Example
@@ -56,7 +56,7 @@ The following tag is a simple example of using a tag to add an alias to a comman
 The following is an example of using embeds in tags ( JSON ). This tag has often been used in dank memer servers.
 
 ```rs
-[p] tag + gping {require(855358569209397279,802817599078793216,871979044072210504}:<:dl_staff:855594650244874260>}
+[p]tag + gping {require(855358569209397279,802817599078793216,871979044072210504):<:dl_staff:855594650244874260>}
 {override}
 {embed({
     "footer":{
