@@ -147,7 +147,39 @@ Redirects the tag response to either the given channel, the author's DMs, or use
 
 ### Delete Block
 
+Delete blocks will delete the invocation message if the given parameter is true. If there is no parameter i.e., `{delete}` it will default to true.
+
+**Usage:** `{delete([bool])}`
+
+**Payload:** None
+
+**Parameter:** bool, None
+
+```js title="Examples"
+{delete}
+{delete({args(1)}==delete)}
+```
+
 ### React Block
+
+The react block will react with up to 5 emoji to the tag response message. If the name used is `reactu`, it will react to the tag invocation instead. The given emoji can be custom or unicode emoji. Emojis can be split with “,”.
+
+The block accepts emojis being passed to the parameter or the payload, but not both.
+
+**Usage:** `{react(<emoji,emoji>):[emoji,emoji]}`
+
+**Aliases:** `reactu`
+
+**Payload:** emoji
+
+**Parameter:** emoji
+
+```js title="Examples"
+{react(🅱️)}
+{react(🍎,🍏)}
+{react(<:kappa:754146174843355146>)}
+{reactu:🅱️}
+```
 
 ## Utility Blocks
 
