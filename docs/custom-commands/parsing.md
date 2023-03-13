@@ -23,7 +23,7 @@ The require block will attempt to convert the given parameter into a channel or 
 
 ```js title="Example:"
 {require(admin)}
-{require(#・public-lounge, #・lemons-recreational-suite・):This tag can only be run in #🟦・public-lounge and #・lemons-recreational-suite・}
+{require(#・public-lounge, #・lemons-recreational-suite・):This tag can only be run in #・public-lounge and #・lemons-recreational-suite・}
 {require(855358569209397279, 816655055054307359, 858137305500090399):You aren't allowed to use this tag.}
 ```
 
@@ -115,9 +115,10 @@ Adding a field to an embed requires the payload to be split by `|`, into either 
 
 ```js title="Example:"
 {embed(color):#ffff88}
-{embed(title):DANK LOVERS}
-{embed(description):DANK LOVERS is a dank memer based Discord server, with good and experienced staff}
-{embed(field):Speciality|We have the best event and giveaway managers you will ever get to know.|false}
+{embed(title):Melon's Lounge}
+{embed(description):Melon's Lounge is the official support server for Melon Discord Bot.}
+{embed(field):Speciality|We have the best staff members you will ever get to know.|false}
+{embed(footer):Make sure to join our support server!|{guild(icon)}}
 ```
 
 Both methods can be combined to create an embed in a tag. The following tagscript uses JSON to create an embed with fields and later set the embed title.
