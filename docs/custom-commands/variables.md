@@ -131,6 +131,4 @@ timestamp | Server's creation date as UTC timestamp
 member_count | Server's member count
 bots | Number of bots in the server
 humans | Number of humans in the server
-boosts | The server's boost count
-boost_level | The server's boost level
 random | A random member from the server
