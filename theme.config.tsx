@@ -1,11 +1,12 @@
-import { DocsThemeConfig } from "nextra-theme-docs/.";
+import { DocsThemeConfig } from "nextra-theme-docs";
 import { useRouter } from 'next/router';
-
-import logo from './static/images/logo.svg'
 
 const config: DocsThemeConfig = {
     project: {
         link: 'https://github.com/japandotorg/melon-docs',
+    },
+    chat: {
+        link: 'https://discord.gg/AyMrA7KMSp',
     },
     docsRepositoryBase: 'https://github.com/japandotorg/melon-docs/tree/dev',
     useNextSeoProps() {
@@ -17,7 +18,6 @@ const config: DocsThemeConfig = {
         };
     },
     logo: <span>MELON DOCS</span>,
-    logoLink: logo,
     head: (
         <>
             <meta name="msapplication-TileColor" content="#ffffff" />
@@ -52,11 +52,19 @@ const config: DocsThemeConfig = {
             };
             return <> {title} </>
         },
-        defaultMenuCollapseLevel: 0,
+        defaultMenuCollapseLevel: 1,
     },
     footer: {
         text: <> Copyright © {new Date().getFullYear} japandotorg </>
     },
+    banner: {
+        key: 'join-support',
+        text: (
+            <a href="https://discord.gg/AyMrA7KMSp">
+                Join our support server!
+            </a>
+        )
+    }
 };
 
 export default config;
