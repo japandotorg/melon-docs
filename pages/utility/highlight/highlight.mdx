@@ -1,0 +1,179 @@
+---
+title: Highlight
+sidebar_position: 1
+---
+
+Highlighting.
+
+#### Syntax
+```
+[p]highlight add [channel] [text..]
+```
+#### Description
+Add a word to be highlighted on.
+Text will be converted to lowercase.
+Can also provide an optional channel argument for
+the highlight to be applied to that channel.
+
+#### Syntax
+```
+[p]highlight remove [channel] [text..]
+```
+#### Description
+Remove highlighting in a channel.
+An optional channel can be provided to remove a highlight from that channel.
+
+#### Syntax
+```
+[p]highlight toggle <state> [channel] [word]
+```
+#### Description
+Toggle highlighting.
+Must be a valid bool. Not passing a word will enable/disable highlighting for all
+highlights.
+
+
+#### Syntax
+```
+[p]highlight cooldown [seconds]
+```
+#### Description
+Set the cooldown for highlighted messages to be sent. Default is 60 seconds.
+
+:::note
+
+This is per guild.
+Not providing a value will send the current set value.
+
+:::
+
+#### Syntax
+```
+[p]highlight list [channel]
+```
+#### Description
+Current highlight settings for a channel.
+A channel argument can be supplied to view settings for said channel.
+
+#### Syntax
+```
+[p]highlight boundary <state> [channel] [word]
+```
+#### Description
+Use word boundaries for highlighting.
+Expects a valid bool. Not passing a word will enable/disable word boundaries for all highlights.
+
+#### Syntax
+```
+[p]highlight bots <state> [channel] [word]
+```
+#### Description
+Enable highlighting of bot messages.
+Expects a valid bool. Not passing a word will enable/disable bot highlighting for all highlights.
+
+#### Syntax
+```
+[p]highlight blacklist channel <channel>
+```
+#### Description
+Add or remove a channel from highlight blacklist.
+
+:::note
+
+This is per guild.
+
+:::
+
+#### Syntax
+```
+[p]highlight blacklist user <user>
+```
+#### Description
+Add or remove a member from highlight blacklist.
+
+:::note
+
+This is per guild.
+
+:::
+
+#### Syntax
+```
+[p]highlight blacklist list
+```
+#### Description
+List your blacklist.
+
+#### Syntax
+```
+[p]highlight whitelist user <user>
+```
+#### Description
+Add or remove a member from highlight whitelist.
+
+:::note
+
+This is per guild.
+
+:::
+
+#### Syntax
+```
+[p]highlight whitelist list
+```
+#### Description
+List those in your whitelist.
+
+## Guild settings.
+
+#### Syntax
+```
+[p]highlight guild add [channel] [text..]
+```
+#### Description
+Add a word to be highlighted on.
+Text will be converted to lowercase.
+Can also provide an optional channel argument for
+the highlight to be applied to that channel.
+
+#### Syntax
+```
+[p]highlight guild remove [channel] [text..]
+```
+#### Description
+Remove highlighting in a channel.
+An optional channel can be provided to remove a highlight from that channel.
+
+#### Syntax
+```
+[p]highlight guild toggle <state> [channel] [word]
+```
+#### Description
+Toggle highlighting.
+Must be a valid bool. Not passing a word will enable/disable highlighting for all
+highlights.
+
+#### Syntax
+```
+[p]highlight guild list [channel]
+```
+#### Description
+Current highlight settings for a channel.
+A channel argument can be supplied to view settings for said channel.
+
+#### Syntax
+```
+[p]highlight guild boundary <state> [channel] [word]
+```
+#### Description
+Use word boundaries for highlighting.
+Expects a valid bool. Not passing a word will enable/disable word boundaries for all highlights.
+
+
+#### Syntax
+```
+[p]highlight guild bots <state> [channel] [word]
+```
+#### Description
+Enable highlighting of bot messages.
+Expects a valid bool. Not passing a word will enable/disable bot highlighting for all highlights.

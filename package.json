@@ -1,0 +1,24 @@
+{
+    "name": "melon-docs",
+    "version": "2.0.0",
+    "description": "Documentation website for Melon Discord Bot.",
+    "license": "MIT",
+    "author": "Lemon Rose <japandotorg@pm.me> [inthedark.org#0666]",
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start"
+    },
+    "dependencies": {
+        "next": "^13.2.4",
+        "nextra": "^2.2.19",
+        "nextra-theme-docs": "^2.2.19",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "@types/node": "^18.15.3",
+        "stylelint-config-recommended": "^11.0.0",
+        "typescript": "^5.0.2"
+    }
+}
