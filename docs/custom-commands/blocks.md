@@ -285,6 +285,42 @@ Parameter: "+", None
 # <https://japandotorg.me/about?q=command+block&check_keywords=yes&area=default>
 ```
 
+#### Upper Block
+
+The Upper block will do exactly as it and will make the payload uppercase. The
+block alone will not do anything.
+
+Usage: `{upper(<string>)}`
+
+Aliases: `upper, uppercase`
+
+Payload: None
+
+Parameter: string
+
+```py title="Example:"
+{upper(hello)}
+# HELLO
+```
+
+#### Lower Block
+
+The Lower block will make the payload lowercase. The block alone will
+not do anything.
+
+Usage: `{lower(<string>)}`
+
+Aliases: `lower, lowercase`
+
+Payload: None
+
+Parameter: string
+
+```py title="Example:"
+{lower(HELLO)}
+# hello
+```
+
 ### Miscellaneous Blocks
 
 #### Strftime Block
@@ -330,4 +366,133 @@ If no parameters are provided, the TagScript Engine defaults to use the current 
 # The above expression as of 2021-10-07 would output 2 months 24 days 6 hours, or the time until Midnight New Years Day
 {td({m:trunc({unix}-3600)}):{strf:%m-%d %H.%M.%S}}
 # The above expression will always out put 1 hour because {unix} is the current time and we subtracted 3600 seconds
+```
+
+#### Count Block
+    
+The count block will count how much of text is in message.
+This is case sensitive and will include substrings, if you
+don't provide a parameter, it will count the spaces in the
+message.
+
+Usage: `{count([text]):<message>}`
+
+Payload: message
+
+Parameter: text
+
+```py title="Example:"
+{count(Tag):Tagscript}
+# 1
+{count(Tag): Tag Script Tagscript}
+# 2
+{count(t):Hello World, Tag, Script}
+# 1 as there is only one lowercase t in the entire string
+```
+
+#### Length Block
+
+The length block will check the length of the given String.
+If a parameter is passed in, the block will check the length
+based on what you passed in, w for word, s for spaces.
+If you provide an invalid parameter, the block will return -1.
+
+Usage: `{length(["word", "space"]):<text>}`
+
+Aliases: `len`
+
+Payload: text
+
+Parameter: "word", "space"
+
+```py title="Example:"
+{length:Tagscript}
+# 9
+{len(word):Tag Script}
+# 2
+{len(w):Tags}
+# 1
+{len(space):Hello World, Tag, Script}
+# 3
+{len(s):Hello World, Tags}
+# 2
+```
+
+### Variable Blocks
+
+#### Var block
+
+Variables are useful for choosing a value and referencing it later in a tag.
+Variables can be referenced using brackets as any other block.
+Note that if the variable's name is being "used" by any other block the variable
+will be ignored.
+
+Usage: `{=(<name>):<value>}`
+
+Aliases: `=, let, var, const`
+
+Payload: value
+
+Parameter: name
+
+```py title="Example:"
+{=(prefix):!}
+The prefix here is `{prefix}`.
+The prefix here is `!`.
+
+{let(day):Monday}
+{if({day}==Wednesday):It's Wednesday my dudes!|The day is {day}.}
+The day is Monday.
+
+Variables can also be created like so if the interpreter uses loose variables
+{$<name>:<value>}
+{$day:Monday} == {=(day):Monday}
+```
+
+#### Loose Variable Getter Block
+
+The loose variable block represents the adapters for any seeded or defined variables.
+This variable implementation is considered "loose" since it checks whether the variable is
+valid during :meth:`process`, rather than :meth:`will_accept`.
+You may also define variables here with {$<variable name>:<value>}, note that this is not
+available using the StrictVariableGetterBlock class.
+
+Usage: `{<variable_name>([parameter]):[payload]}`
+
+Aliases: This block is valid for any inputted declaration.
+
+Payload: Depends on the variable's underlying adapter.
+
+Parameter: Depends on the variable's underlying adapter.
+
+```py title="Example:"
+{=(example):This is my variable.}
+{example}
+This is my variable.
+
+{$variablename:This is another variable.}
+{variablename}
+This is another variable.
+```
+
+#### Strict Variable Getter Block
+
+The strict variable block represents the adapters for any seeded or defined variables.
+This variable implementation is considered "strict" since it checks whether the variable is
+valid during :meth:`will_accept` and is only processed if the declaration refers to a valid
+variable. The main difference between this and the LooseVariableGetterBlock is that this
+block will only attempt to process if the variable's already been defined.
+
+Usage: `{<variable_name>([parameter]):[payload]}`
+
+Aliases: This block is valid for any variable name in `Response.variables`.
+
+Payload: Depends on the variable's underlying adapter.
+
+Parameter: Depends on the variable's underlying adapter.
+
+```py title="Example:"
+{=(example):This is my variable.}
+{example}
+This is my variable.
 ```
