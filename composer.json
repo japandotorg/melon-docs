@@ -4,7 +4,8 @@
     "type": "project",
     "license": "MIT",
     "require": {
-        "php": ">=8.1",
-        "robmorgan/phinx": "^5.4"
+        "php": ">=8.0.28",
+        "robmorgan/phinx": "^0.13.4"
     }
 }
+custom_page.php
