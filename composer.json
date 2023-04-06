@@ -5,7 +5,6 @@
     "license": "MIT",
     "require": {
         "php": ">=8.0.28",
-        "robmorgan/phinx": "^0.13.4"
+        "robmorgan/phinx": "~0.13.4"
     }
 }
-custom_page.php
