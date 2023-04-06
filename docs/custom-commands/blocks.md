@@ -451,10 +451,10 @@ Variables can also be created like so if the interpreter uses loose variables
 
 #### Loose Variable Getter Block
 
-The loose variable block represents the adapters for any seeded or defined variables.
+The loose variable block represents the adapters for any seeded or defined variables.yarn
 This variable implementation is considered "loose" since it checks whether the variable is
 valid during :meth:`process`, rather than :meth:`will_accept`.
-You may also define variables here with {$<variable name>:<value>}, note that this is not
+You may also define variables here with `{$<variable name>:<value>}`, note that this is not
 available using the StrictVariableGetterBlock class.
 
 Usage: `{<variable_name>([parameter]):[payload]}`
