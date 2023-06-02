@@ -1,0 +1,292 @@
+---
+title: Adventure Text Commands
+sidebar_position: 3
+---
+
+# Adventure Help
+
+Adventure, derived from the Goblins Adventure cog by locastan. 
+
+# adventure
+ - Usage: `[p]adventure [challenge] `
+ - Aliases: `a`
+ - Cooldown: `1 per 5.0 seconds`
+ - Checks: `server_only`
+
+This will send you on an adventure!<br/><br/>You play by reacting with the offered emojis.
+
+:::note
+
+    Challenge is Owner only and cannot be used by anyone else.
+
+:::
+
+## adventure backpack
+ - Usage: `[p]adventure backpack `
+
+This shows the contents of your backpack.
+
+# rebirth
+ - Usage: `[p]rebirth `
+ - Slash Usage: `/rebirth `
+ - Checks: `server_only`
+
+Resets your character level and increases your rebirths by 1.
+
+# negaverse
+ - Usage: `[p]negaverse <offering> `
+ - Aliases: `nv`
+ - Cooldown: `1 per 3600.0 seconds`
+ - Checks: `server_only`
+
+This will send you to fight a nega-member!
+
+# loot
+ - Usage: `[p]loot [box_type=None] [number=1] `
+ - Slash Usage: `/loot [box_type=None] [number=1] `
+ - Cooldown: `1 per 4.0 seconds`
+
+This opens one of your precious treasure chests.<br/><br/>Use the box rarity type with the command: normal, rare, epic, legendary, ascended or set.
+
+# convert
+ - Usage: `[p]convert <box_rarity> [amount=1] `
+ - Cooldown: `1 per 4.0 seconds`
+
+Convert normal, rare or epic chests.<br/><br/>Trade 25 normal chests for 1 rare chest.<br/>Trade 25 rare chests for 1 epic chest.<br/>Trade 25 epic chests for 1 legendary chest.
+
+# loadout
+ - Usage: `[p]loadout `
+ - Aliases: `loadouts`
+
+Set up gear sets or loadouts.
+
+## loadout save
+ - Usage: `[p]loadout save <name> `
+ - Aliases: `update`
+
+Save your current equipment as a loadout.
+
+## loadout delete
+ - Usage: `[p]loadout delete <name> `
+ - Aliases: `del, rem, and remove`
+
+Delete a saved loadout.
+
+## loadout show
+ - Usage: `[p]loadout show [name=None] `
+
+Show saved loadouts.
+
+## loadout equip
+ - Usage: `[p]loadout equip <name> `
+ - Cooldown: `1 per 600.0 seconds`
+
+Equip a saved loadout.
+
+# aleaderboard
+ - Usage: `[p]aleaderboard [show_global=False] `
+ - Checks: `server_only`
+
+Print the leaderboard.
+
+# scoreboard
+ - Usage: `[p]scoreboard [show_global=False] `
+ - Checks: `server_only`
+
+Print the scoreboard.
+
+# nvsb
+ - Usage: `[p]nvsb [show_global=False] `
+ - Checks: `server_only`
+
+Print the negaverse scoreboard.
+
+# wscoreboard
+ - Usage: `[p]wscoreboard [show_global=False] `
+ - Checks: `server_only`
+
+Print the weekly scoreboard.
+
+# atransfer
+ - Usage: `[p]atransfer `
+ - Checks: `has_separated_economy`
+
+Transfer currency between players/economies.
+
+## atransfer deposit
+ - Usage: `[p]atransfer deposit <amount> `
+ - Checks: `server_only`
+
+Convert bank currency to gold.
+
+## atransfer withdraw
+ - Usage: `[p]atransfer withdraw <amount> `
+ - Cooldown: `1 per 600.0 seconds`
+ - Checks: `server_only`
+
+Convert gold to bank currency.
+
+## atransfer player
+ - Usage: `[p]atransfer player <amount> <player> `
+ - Cooldown: `1 per 600.0 seconds`
+ - Checks: `server_only`
+
+Transfer gold to another player.
+
+# mysets
+ - Usage: `[p]mysets `
+
+Show your sets.
+
+# apayday
+ - Usage: `[p]apayday `
+ - Cooldown: `1 per 600.0 seconds`
+ - Checks: `has_separated_economy`
+
+Get some free gold.
+
+# heroclass
+ - Usage: `[p]heroclass [clz=None] [action=None] `
+ - Cooldown: `1 per 7200.0 seconds`
+
+Allows you to select a class if you are level 10 or above.<br/><br/>For information on class use: [p]heroclass classname info.
+
+# pet
+ - Usage: `[p]pet `
+ - Cooldown: `1 per 5.0 seconds`
+
+[Ranger Class Only]<br/><br/>This allows a Ranger to tame or set free a pet or send it foraging.
+
+## pet forage
+ - Usage: `[p]pet forage `
+
+Use your pet to forage for items!
+
+## pet free
+ - Usage: `[p]pet free `
+
+Free your pet :cry:
+
+# bless
+ - Usage: `[p]bless `
+
+[Cleric Class Only]<br/><br/>This allows a praying Cleric to add substantial bonuses for heroes fighting the battle.
+
+# insight
+ - Usage: `[p]insight `
+ - Cooldown: `1 per 30.0 seconds`
+ - Checks: `server_only`
+
+[Psychic Class Only]<br/>This allows a Psychic to expose the current enemy's weakeness to the party.
+
+# rage
+ - Usage: `[p]rage `
+
+[Berserker Class Only]<br/><br/>This allows a Berserker to add substantial attack bonuses for one battle.
+
+# focus
+ - Usage: `[p]focus `
+
+[Wizard Class Only]<br/><br/>This allows a Wizard to add substantial magic bonuses for one battle.
+
+# music
+ - Usage: `[p]music `
+
+[Bard Class Only]<br/><br/>This allows a Bard to add substantial diplomacy bonuses for one battle.
+
+# forge
+ - Usage: `[p]forge `
+ - Slash Usage: `/forge `
+
+[Tinkerer Class Only]<br/><br/>This allows a Tinkerer to forge two items into a device. (1h cooldown)
+
+# skill
+ - Usage: `[p]skill [skill=None] [amount=1] `
+ - Cooldown: `1 per 2.0 seconds`
+
+This allows you to spend skillpoints.<br/><br/>[p]skill attack/charisma/intelligence<br/>[p]skill reset Will allow you to reset your skill points for a cost.
+
+# setinfo
+ - Usage: `[p]setinfo [set_name] `
+
+Show set bonuses for the specified set.
+
+# stats
+ - Usage: `[p]stats [user] `
+
+This draws up a character sheet of you or an optionally specified member.
+
+# unequip
+ - Usage: `[p]unequip <item> `
+
+This stashes a specified equipped item into your backpack.<br/><br/>Use [p]unequip name of item or [p]unequip slot
+
+# equip
+ - Usage: `[p]equip <item> `
+ - Slash Usage: `/equip <item> `
+
+This equips an item from your backpack.
+
+# backpack
+ - Usage: `[p]backpack [show_diff=False] [rarity=None] [slot] `
+
+This shows the contents of your backpack.<br/><br/>Give it a rarity and/or slot to filter what backpack items to show.<br/><br/>Selling:     [p]backpack sell item_name<br/>Trading:     [p]backpack trade @user price item_name<br/>Equip:       [p]backpack equip item_name<br/>Sell All:    [p]backpack sellall rarity slot<br/>Disassemble: [p]backpack disassemble item_name<br/><br/>Note: An item **degrade** level is how many rebirths it will last, before it is broken down.
+
+## backpack equip
+ - Usage: `[p]backpack equip <equip_item> `
+
+Equip an item from your backpack.
+
+## backpack sellall
+ - Usage: `[p]backpack sellall [rarity=None] [slot] `
+
+Sell all items in your backpack. Optionally specify rarity or slot.
+
+## backpack disassemble
+ - Usage: `[p]backpack disassemble <backpack_items> `
+
+Disassemble items from your backpack.<br/><br/>This will provide a chance for a chest,<br/>or the item might break while you are handling it...
+
+## backpack sell
+ - Usage: `[p]backpack sell <item> `
+ - Cooldown: `3 per 60.0 seconds`
+
+Sell an item from your backpack.
+
+## backpack eset
+ - Usage: `[p]backpack eset <set_name> `
+ - Cooldown: `1 per 600.0 seconds`
+
+Equip all parts of a set that you own.
+
+## backpack trade
+ - Usage: `[p]backpack trade <buyer> [asking=1000] <item> `
+
+Trade an item from your backpack to another user.
+
+# ebackpack
+ - Usage: `[p]ebackpack [show_diff=False] [rarity=None] [slot] `
+
+This shows the contents of your backpack that can be equipped.<br/><br/>Give it a rarity and/or slot to filter what backpack items to show.<br/><br/>Note: An item **degrade** level is how many rebirths it will last, before it is broken down.
+
+# cbackpack
+ - Usage: `[p]cbackpack `
+
+Complex backpack management tools.<br/><br/>Please read the usage instructions [here](https://guide.melonbot.io/docs/adventure/backpack)
+
+## cbackpack show
+ - Usage: `[p]cbackpack show <query> `
+
+This shows the contents of your backpack.<br/><br/>Please read the usage instructions [here](https://guide.melonbot.io/docs/adventure/backpack)
+
+## cbackpack disassemble
+ - Usage: `[p]cbackpack disassemble <query> `
+
+Disassemble items from your backpack.<br/><br/>This will provide a chance for a chest,<br/>or the item might break while you are handling it...<br/><br/>Please read the usage instructions [here](https://guide.melonbot.io/docs/adventure/backpack)
+
+## cbackpack sell
+ - Usage: `[p]cbackpack sell <query> `
+ - Cooldown: `3 per 60.0 seconds`
+
+Sell items from your backpack.<br/><br/>Forged items cannot be sold using this command.<br/><br/>Please read the usage instructions [here](https://guide.melonbot.io/docs/adventure/backpack)
+
