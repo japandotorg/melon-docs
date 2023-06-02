@@ -1,0 +1,495 @@
+---
+title: Adventure Commands
+sidebar_position: 3
+---
+
+# Adventure Help
+
+Adventure, derived from the Goblins Adventure cog by locastan. 
+- Most commands are hybrid commands but shown as slash commands for ease of use. If you prefer text commands, you're welcome to use them instead. see `[p]help Adventure` for more informations and complete list of commands.
+
+## adventure start (Slash Command)
+ - Usage: `/adventure start`
+
+This will send you on an adventure!
+
+## adventure rebirth (Slash Command)
+ - Usage: `/adventure rebirth `
+
+Resets your character level and increases your rebirths by 1.
+
+## adventure negaverse (Slash Command)
+ - Usage: `/adventure negaverse <offering> `
+ - `offering:` (Required) …
+
+This will send you to fight a nega-member!
+
+## adventure loot (Slash Command)
+ - Usage: `/adventure loot [box_type] [number] `
+ - `box_type:` (Optional) …
+ - `number:` (Optional) …
+
+This opens one of your precious treasure chests.
+
+## adventure convert (Slash Command)
+ - Usage: `/adventure convert <box_rarity> [amount] `
+ - `box_rarity:` (Required) …
+ - `amount:` (Optional) …
+
+Convert normal, rare or epic chests.
+
+## adventure aleaderboard (Slash Command)
+ - Usage: `/adventure aleaderboard [show_global] `
+ - `show_global:` (Optional) …
+
+Print the leaderboard.
+
+## adventure scoreboard (Slash Command)
+ - Usage: `/adventure scoreboard [show_global] `
+ - `show_global:` (Optional) …
+
+Print the scoreboard.
+
+## adventure nvsb (Slash Command)
+ - Usage: `/adventure nvsb [show_global] `
+ - `show_global:` (Optional) …
+
+Print the negaverse scoreboard.
+
+## adventure wscoreboard (Slash Command)
+ - Usage: `/adventure wscoreboard [show_global] `
+ - `show_global:` (Optional) …
+
+Print the weekly scoreboard.
+
+## adventure heroclass (Slash Command)
+ - Usage: `/adventure heroclass [class] [action] `
+ - `class:` (Optional) …
+ - `action:` (Optional) …
+
+Allows you to select a class if you are level 10 or above.
+
+## adventure pet
+ - Usage: `[p]adventure pet `
+
+[Ranger Class Only]
+
+### adventure pet find (Slash Command)
+ - Usage: `/adventure pet find `
+
+[Ranger Class Only]
+
+### adventure pet forage (Slash Command)
+ - Usage: `/adventure pet forage `
+
+Use your pet to forage for items!
+
+### adventure pet free (Slash Command)
+ - Usage: `/adventure pet free `
+
+Free your pet :cry:
+
+## adventure bless (Slash Command)
+ - Usage: `/adventure bless `
+
+[Cleric Class Only]
+
+## adventure insight (Slash Command)
+ - Usage: `/adventure insight `
+
+[Psychic Class Only]
+
+## adventure rage (Slash Command)
+ - Usage: `/adventure rage `
+
+[Berserker Class Only]
+
+## adventure focus (Slash Command)
+ - Usage: `/adventure focus `
+
+[Wizard Class Only]
+
+## adventure music (Slash Command)
+ - Usage: `/adventure music `
+
+[Bard Class Only]
+
+## adventure forge (Slash Command)
+ - Usage: `/adventure forge `
+
+[Tinkerer Class Only]
+
+## adventure skill (Slash Command)
+ - Usage: `/adventure skill [skill] [amount] `
+ - `skill:` (Optional) …
+ - `amount:` (Optional) …
+
+This allows you to spend skillpoints.
+
+## adventure setinfo (Slash Command)
+ - Usage: `/adventure setinfo [set_name] `
+ - `set_name:` (Optional) …
+
+Show set bonuses for the specified set.
+
+## adventure stats (Slash Command)
+ - Usage: `/adventure stats [user] `
+ - `user:` (Optional) …
+
+This draws up a character sheet of you or an optionally specified member.
+
+## adventure unequip (Slash Command)
+ - Usage: `/adventure unequip <item> `
+ - `item:` (Required) …
+
+This stashes a specified equipped item into your backpack.
+
+## adventure equip (Slash Command)
+ - Usage: `/adventure equip <item> `
+ - `item:` (Required) …
+
+This equips an item from your backpack.
+
+## adventure backpack
+ - Usage: `[p]adventure backpack `
+
+This shows the contents of your backpack.
+
+### adventure backpack show (Slash Command)
+ - Usage: `/adventure backpack show [show_diff] [rarity] [slot] `
+ - `show_diff:` (Optional) …
+ - `rarity:` (Optional) …
+ - `slot:` (Optional) …
+
+This shows the contents of your backpack.
+
+### adventure backpack equip (Slash Command)
+ - Usage: `/adventure backpack equip <equip_item> `
+ - `equip_item:` (Required) …
+
+Equip an item from your backpack.
+
+### adventure backpack eset (Slash Command)
+ - Usage: `/adventure backpack eset <set_name> `
+ - `set_name:` (Required) …
+
+Equip all parts of a set that you own.
+
+### adventure backpack disassemble (Slash Command)
+ - Usage: `/adventure backpack disassemble <backpack_items> `
+ - `backpack_items:` (Required) …
+
+Disassemble items from your backpack.
+
+### adventure backpack sellall (Slash Command)
+ - Usage: `/adventure backpack sellall [rarity] [slot] `
+ - `rarity:` (Optional) …
+ - `slot:` (Optional) …
+
+Sell all items in your backpack. Optionally specify rarity or slot.
+
+### adventure backpack sell (Slash Command)
+ - Usage: `/adventure backpack sell <item> `
+ - `item:` (Required) …
+
+Sell an item from your backpack.
+
+### adventure backpack trade (Slash Command)
+ - Usage: `/adventure backpack trade <buyer> <item> [asking] `
+ - `buyer:` (Required) …
+ - `item:` (Required) …
+ - `asking:` (Optional) …
+
+Trade an item from your backpack to another user.
+
+# rebirth (Hybrid Command)
+ - Usage: `[p]rebirth `
+ - Slash Usage: `/rebirth `
+ - Checks: `server_only`
+
+Resets your character level and increases your rebirths by 1.
+
+# negaverse (Hybrid Command)
+ - Usage: `[p]negaverse <offering> `
+ - Slash Usage: `/negaverse <offering> `
+ - Aliases: `nv`
+ - Cooldown: `1 per 3600.0 seconds`
+ - Checks: `server_only`
+
+This will send you to fight a nega-member!
+
+# loot (Hybrid Command)
+ - Usage: `[p]loot [box_type=None] [number=1] `
+ - Slash Usage: `/loot [box_type=None] [number=1] `
+ - Cooldown: `1 per 4.0 seconds`
+
+This opens one of your precious treasure chests.<br/><br/>Use the box rarity type with the command: normal, rare, epic, legendary, ascended or set.
+
+# convert (Hybrid Command)
+ - Usage: `[p]convert <box_rarity> [amount=1] `
+ - Slash Usage: `/convert <box_rarity> [amount=1] `
+ - Cooldown: `1 per 4.0 seconds`
+
+Convert normal, rare or epic chests.<br/><br/>Trade 25 normal chests for 1 rare chest.<br/>Trade 25 rare chests for 1 epic chest.<br/>Trade 25 epic chests for 1 legendary chest.
+
+# loadout
+ - Usage: `[p]loadout `
+ - Aliases: `loadouts`
+
+Set up gear sets or loadouts.
+
+## loadout save
+ - Usage: `[p]loadout save <name> `
+ - Aliases: `update`
+
+Save your current equipment as a loadout.
+
+## loadout delete
+ - Usage: `[p]loadout delete <name> `
+ - Aliases: `del, rem, and remove`
+
+Delete a saved loadout.
+
+## loadout show
+ - Usage: `[p]loadout show [name=None] `
+
+Show saved loadouts.
+
+## loadout equip
+ - Usage: `[p]loadout equip <name> `
+ - Aliases: `load`
+ - Cooldown: `1 per 600.0 seconds`
+
+Equip a saved loadout.
+
+# aleaderboard (Hybrid Command)
+ - Usage: `[p]aleaderboard [show_global=False] `
+ - Slash Usage: `/aleaderboard [show_global=False] `
+ - Checks: `server_only`
+
+Print the leaderboard.
+
+# scoreboard (Hybrid Command)
+ - Usage: `[p]scoreboard [show_global=False] `
+ - Slash Usage: `/scoreboard [show_global=False] `
+ - Checks: `server_only`
+
+Print the scoreboard.
+
+# nvsb (Hybrid Command)
+ - Usage: `[p]nvsb [show_global=False] `
+ - Slash Usage: `/nvsb [show_global=False] `
+ - Checks: `server_only`
+
+Print the negaverse scoreboard.
+
+# wscoreboard (Hybrid Command)
+ - Usage: `[p]wscoreboard [show_global=False] `
+ - Slash Usage: `/wscoreboard [show_global=False] `
+ - Checks: `server_only`
+
+Print the weekly scoreboard.
+
+# atransfer
+ - Usage: `[p]atransfer `
+ - Checks: `has_separated_economy`
+
+Transfer currency between players/economies.
+
+## atransfer deposit
+ - Usage: `[p]atransfer deposit <amount> `
+ - Checks: `server_only`
+
+Convert bank currency to gold.
+
+## atransfer withdraw
+ - Usage: `[p]atransfer withdraw <amount> `
+ - Cooldown: `1 per 600.0 seconds`
+ - Checks: `server_only`
+
+Convert gold to bank currency.
+
+## atransfer player
+ - Usage: `[p]atransfer player <amount> <player> `
+ - Cooldown: `1 per 600.0 seconds`
+ - Checks: `server_only`
+
+Transfer gold to another player.
+
+# mysets
+ - Usage: `[p]mysets `
+
+Show your sets.
+
+# apayday
+ - Usage: `[p]apayday `
+ - Cooldown: `1 per 600.0 seconds`
+ - Checks: `has_separated_economy`
+
+Get some free gold.
+
+# heroclass (Hybrid Command)
+ - Usage: `[p]heroclass [clz=None] [action=None] `
+ - Slash Usage: `/heroclass [clz=None] [action=None] `
+ - Cooldown: `1 per 7200.0 seconds`
+
+Allows you to select a class if you are level 10 or above.<br/><br/>For information on class use: [p]heroclass classname info.
+
+# pet (Hybrid Command)
+ - Usage: `[p]pet `
+ - Slash Usage: `/pet `
+ - Cooldown: `1 per 5.0 seconds`
+
+[Ranger Class Only]<br/><br/>This allows a Ranger to tame or set free a pet or send it foraging.
+
+## pet forage (Hybrid Command)
+ - Usage: `[p]pet forage `
+ - Slash Usage: `/pet forage `
+
+Use your pet to forage for items!
+
+## pet free (Hybrid Command)
+ - Usage: `[p]pet free `
+ - Slash Usage: `/pet free `
+
+Free your pet :cry:
+
+# bless (Hybrid Command)
+ - Usage: `[p]bless `
+ - Slash Usage: `/bless `
+
+[Cleric Class Only]<br/><br/>This allows a praying Cleric to add substantial bonuses for heroes fighting the battle.
+
+# insight (Hybrid Command)
+ - Usage: `[p]insight `
+ - Slash Usage: `/insight `
+ - Cooldown: `1 per 30.0 seconds`
+ - Checks: `server_only`
+
+[Psychic Class Only]<br/>This allows a Psychic to expose the current enemy's weakeness to the party.
+
+# rage (Hybrid Command)
+ - Usage: `[p]rage `
+ - Slash Usage: `/rage `
+
+[Berserker Class Only]<br/><br/>This allows a Berserker to add substantial attack bonuses for one battle.
+
+# focus (Hybrid Command)
+ - Usage: `[p]focus `
+ - Slash Usage: `/focus `
+
+[Wizard Class Only]<br/><br/>This allows a Wizard to add substantial magic bonuses for one battle.
+
+# music (Hybrid Command)
+ - Usage: `[p]music `
+ - Slash Usage: `/music `
+
+[Bard Class Only]<br/><br/>This allows a Bard to add substantial diplomacy bonuses for one battle.
+
+# forge (Hybrid Command)
+ - Usage: `[p]forge `
+ - Slash Usage: `/forge `
+
+[Tinkerer Class Only]<br/><br/>This allows a Tinkerer to forge two items into a device. (1h cooldown)
+
+# skill (Hybrid Command)
+ - Usage: `[p]skill [skill=None] [amount=1] `
+ - Slash Usage: `/skill [skill=None] [amount=1] `
+ - Cooldown: `1 per 2.0 seconds`
+
+This allows you to spend skillpoints.<br/><br/>[p]skill attack/charisma/intelligence<br/>[p]skill reset Will allow you to reset your skill points for a cost.
+
+# setinfo (Hybrid Command)
+ - Usage: `[p]setinfo [set_name] `
+ - Slash Usage: `/setinfo [set_name] `
+
+Show set bonuses for the specified set.
+
+# stats (Hybrid Command)
+ - Usage: `[p]stats [user] `
+ - Slash Usage: `/stats [user] `
+
+This draws up a character sheet of you or an optionally specified member.
+
+# unequip (Hybrid Command)
+ - Usage: `[p]unequip <item> `
+ - Slash Usage: `/unequip <item> `
+
+This stashes a specified equipped item into your backpack.<br/><br/>Use [p]unequip name of item or [p]unequip slot
+
+# equip (Hybrid Command)
+ - Usage: `[p]equip <item> `
+ - Slash Usage: `/equip <item> `
+
+This equips an item from your backpack.
+
+# backpack (Hybrid Command)
+ - Usage: `[p]backpack [show_diff=False] [rarity=None] [slot] `
+ - Slash Usage: `/backpack [show_diff=False] [rarity=None] [slot] `
+
+This shows the contents of your backpack.<br/><br/>Give it a rarity and/or slot to filter what backpack items to show.<br/><br/>Selling:     [p]backpack sell item_name<br/>Trading:     [p]backpack trade @user price item_name<br/>Equip:       [p]backpack equip item_name<br/>Sell All:    [p]backpack sellall rarity slot<br/>Disassemble: [p]backpack disassemble item_name<br/><br/>Note: An item **degrade** level is how many rebirths it will last, before it is broken down.
+
+## backpack equip (Hybrid Command)
+ - Usage: `[p]backpack equip <equip_item> `
+ - Slash Usage: `/backpack equip <equip_item> `
+
+Equip an item from your backpack.
+
+## backpack sellall (Hybrid Command)
+ - Usage: `[p]backpack sellall [rarity=None] [slot] `
+ - Slash Usage: `/backpack sellall [rarity=None] [slot] `
+
+Sell all items in your backpack. Optionally specify rarity or slot.
+
+## backpack disassemble (Hybrid Command)
+ - Usage: `[p]backpack disassemble <backpack_items> `
+ - Slash Usage: `/backpack disassemble <backpack_items> `
+
+Disassemble items from your backpack.<br/><br/>This will provide a chance for a chest,<br/>or the item might break while you are handling it...
+
+## backpack sell (Hybrid Command)
+ - Usage: `[p]backpack sell <item> `
+ - Slash Usage: `/backpack sell <item> `
+ - Cooldown: `3 per 60.0 seconds`
+
+Sell an item from your backpack.
+
+## backpack eset (Hybrid Command)
+ - Usage: `[p]backpack eset <set_name> `
+ - Slash Usage: `/backpack eset <set_name> `
+ - Cooldown: `1 per 600.0 seconds`
+
+Equip all parts of a set that you own.
+
+## backpack trade (Hybrid Command)
+ - Usage: `[p]backpack trade <buyer> [asking=1000] <item> `
+ - Slash Usage: `/backpack trade <buyer> [asking=1000] <item> `
+
+Trade an item from your backpack to another user.
+
+# ebackpack
+ - Usage: `[p]ebackpack [show_diff=False] [rarity=None] [slot] `
+
+This shows the contents of your backpack that can be equipped.<br/><br/>Give it a rarity and/or slot to filter what backpack items to show.<br/><br/>Note: An item **degrade** level is how many rebirths it will last, before it is broken down.
+
+# cbackpack
+ - Usage: `[p]cbackpack `
+
+Complex backpack management tools.<br/><br/>Please read the usage instructions [here](https://guide.melonbot.io/docs/adventure/backpack)
+
+## cbackpack show
+ - Usage: `[p]cbackpack show <query> `
+
+This shows the contents of your backpack.<br/><br/>Please read the usage instructions [here](https://guide.melonbot.io/docs/adventure/backpack)
+
+## cbackpack disassemble
+ - Usage: `[p]cbackpack disassemble <query> `
+
+Disassemble items from your backpack.<br/><br/>This will provide a chance for a chest,<br/>or the item might break while you are handling it...<br/><br/>Please read the usage instructions [here](https://guide.melonbot.io/docs/adventure/backpack)
+
+## cbackpack sell
+ - Usage: `[p]cbackpack sell <query> `
+ - Cooldown: `3 per 60.0 seconds`
+
+Sell items from your backpack.<br/><br/>Forged items cannot be sold using this command.<br/><br/>Please read the usage instructions [here](https://guide.melonbot.io/docs/adventure/backpack)
+
