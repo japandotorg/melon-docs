@@ -1,0 +1,111 @@
+---
+title: [Admin] Adventureset Commands
+sidebar_position: 4
+---
+
+# adventureset
+ - Usage: `[p]adventureset `
+ - Checks: `server_only`
+
+Setup various adventure settings.
+
+## adventureset locks
+ - Usage: `[p]adventureset locks `
+ - Restricted to: `ADMIN`
+
+[Admin] Reset Adventure locks.
+
+### adventureset locks adventure
+ - Usage: `[p]adventureset locks adventure `
+ - Checks: `server_only`
+
+[Admin] Reset the adventure game lock for the server.
+
+## adventureset economy
+ - Usage: `[p]adventureset economy `
+ - Checks: `check_global_setting_admin, server_only, and has_separated_economy`
+
+[Admin] Manages the adventure economy.
+
+### adventureset economy withdraw
+ - Usage: `[p]adventureset economy withdraw `
+
+[Admin] Toggle whether users are allowed to withdraw from adventure currency to main currency.
+
+### adventureset economy maxwithdraw
+ - Usage: `[p]adventureset economy maxwithdraw <amount> `
+
+[Admin] Set how much players are allowed to withdraw.
+
+## adventureset advcooldown
+ - Usage: `[p]adventureset advcooldown <time_in_seconds> `
+ - Restricted to: `ADMIN`
+ - Checks: `server_only`
+
+[Admin] Changes the cooldown/gather time after an adventure.<br/><br/>Default is 120 seconds.
+
+## adventureset carttime
+ - Usage: `[p]adventureset carttime <time> `
+ - Restricted to: `ADMIN`
+
+[Admin] Set the cooldown of the cart.<br/>Time can be in seconds, minutes, hours, or days.<br/>Examples: 1h 30m, 2 days, 300 seconds
+
+## adventureset version
+ - Usage: `[p]adventureset version `
+
+Display the version of adventure being used.
+
+## adventureset cartname
+ - Usage: `[p]adventureset cartname <name> `
+ - Restricted to: `ADMIN`
+
+[Admin] Set the server's name of the cart.
+
+## adventureset rebirthcost
+ - Usage: `[p]adventureset rebirthcost <percentage> `
+ - Checks: `check_global_setting_admin`
+
+[Admin] Set what percentage of the user balance to charge for rebirths.<br/><br/>Unless the user's balance is under 1k, users that rebirth will be left with the base of 1k credits plus the remaining credit percentage after the rebirth charge.
+
+## adventureset god
+ - Usage: `[p]adventureset god <name> `
+ - Restricted to: `ADMIN`
+
+[Admin] Set the server's name of the god.
+
+## adventureset cart
+ - Usage: `[p]adventureset cart [channel] `
+ - Restricted to: `ADMIN`
+ - Checks: `server_only`
+
+[Admin] Add or remove a text channel that the Trader cart can appear in.<br/><br/>If the channel is already in the list, it will be removed.<br/>Use [p]adventureset cart with no arguments to show the channel list.
+
+## adventureset cartroom
+ - Usage: `[p]adventureset cartroom [room=None] `
+ - Restricted to: `ADMIN`
+
+[Admin] Lock carts to a specific text channel.
+
+## adventureset showsettings
+ - Usage: `[p]adventureset showsettings `
+ - Cooldown: `1 per 4.0 seconds`
+ - Checks: `server_only`
+
+Display current settings.
+
+## adventureset embeds
+ - Usage: `[p]adventureset embeds `
+ - Restricted to: `ADMIN`
+ - Aliases: `embed`
+
+[Admin] Set whether or not to use embeds for the adventure game.
+
+# adventure (Hybrid Command)
+ - Usage: `[p]adventure [challenge] `
+ - Slash Usage: `/adventure [challenge] `
+ - Aliases: `a`
+ - Cooldown: `1 per 5.0 seconds`
+ - Checks: `server_only`
+
+This will send you on an adventure!<br/><br/>You play by reacting with the offered emojis.
+
